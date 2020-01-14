@@ -1,0 +1,46 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color:#F7D5D5;
+}
+
+h1.head{
+    width:100%;
+    height:100px;
+    background-color: #F09090;
+    position:fixed;
+    top:-21px;
+    left:0px;
+}
+
+h1.head a img{
+    margin-top:5px;
+    background-color:rgba(0, 0, 0,0);
+}
+
+nav{
+    margin-left:15%;
+    margin-right:15%;
+    margin-top:100px;
+    background-color:rgba(224, 11, 11,0.73);
+    height:40px;
+}
+
+nav a.menu{
+    margin:5px 10px;
+    text-decoration:none;
+    background-color:#8B0000;
+    color:white;
+    padding: 5px 15px;
+    display: inline-block;
+    vertical-align:middle;
+    font-size: 15px;
+    font-family: 'Palatino Linotype', Palatino, serif;
+}
+
+a.menu:hover/*a link is hovered when the mouse is over it*/{
+    background-color:#E00B0B;
+}
+
+
+

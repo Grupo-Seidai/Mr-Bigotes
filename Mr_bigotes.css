@@ -15,12 +15,7 @@ h1.head{
     left:0px;
 }
 
-h1.head a{
-    vertical-align:middle;
-}
-
 h1.head a img{
-    margin-top:5px;
     background-color:rgba(0, 0, 0,0);
 }
 

@@ -1,17 +1,28 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    
     <title>Mr Bigotes|Inicio</title>
+    
     <link rel="stylesheet" type="text/css" href='Mr_bigotes.css'>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Playfair+Display|Zilla+Slab&display=swap" rel="stylesheet"> 
   </head>
   <body>
+
+    
     <header>
       <h1 class='head'><center><a href=''><img src='images/Bigotes.png' height="120px" width="120px" ></a></center></h1>
     </header>
-    <nav><center>
+
+
+    
+    <nav>
+      <center>
 	<ul>
-	  <li class='menu'><a href='#'>INICIO</a></li>
-	  <li class='menu' onmouseover="ver()" onmouseout="ocultar()"><a onmouseover='show()' href='#'>PRODUCTOS</a>
+	  <li class='menu display-container'><a href='#' class='display-middle'>INICIO</a></li>
+	  <li class='menu display-container' onmouseover="ver()" onmouseout="ocultar()"><a onmouseover='show()' href='#' class='display-middle'>PRODUCTOS</a>
 	    <div id="prod">
 	      <p><a href="#">Manillas</a></p>
 	      <p><a href="#">Collares</a></p>
@@ -19,18 +30,13 @@
 	      <p><a href="#">Otros</a></p>
 	    </div>
 	  </li>
-	  <li class='menu'><a href='#'>CONTÁCTANOS</a></li>
+	  <li class='menu display-container'><a href='#' class='display-middle'>CONTÁCTANOS</a></li>
 	</ul>
       </center>
-      <script>
-	function ver() {
-        document.getElementById('prod').style.display="block";
-        }
-	function ocultar() {
-        document.getElementById('prod').style.display="none";
-        }
-      </script>
     </nav>
+
+
+    
     <div class="borrar"></div>
     <article>
       <p>Main page</p>
@@ -52,5 +58,11 @@
       <p>Main page</p>
       <p>Main page</p>
     </article>
+
+    <svg width="100px" height="100px">
+      <circle r="50px" cx='50px' cy='50px' fill='#B2F405' />
+    </svg>
+    
+    <script src="js/bar.js"></script>
   </body>
 </html>

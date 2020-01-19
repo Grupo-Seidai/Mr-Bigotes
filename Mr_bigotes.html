@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -10,21 +9,29 @@
       <h1 class='head'><center><a href=''><img src='images/Bigotes.png' height="120px" width="120px" ></a></center></h1>
     </header>
     <nav><center>
-      <a class='menu' href='#'>INICIO</a>
-      <a class='menu' href='#'>PRODUCTOS</a>
-      <a class='menu_product' onmouseover='product_over()' href='#'>PRODUCTOS</a>
+	<ul>
+	  <li class='menu'><a href='#'>INICIO</a></li>
+	  <li class='menu' onmouseover="ver()" onmouseout="ocultar()"><a onmouseover='show()' href='#'>PRODUCTOS</a>
+	    <div id="prod">
+	      <p><a href="#">Manillas</a></p>
+	      <p><a href="#">Collares</a></p>
+	      <p><a href="#">Aretes</a></p>
+	      <p><a href="#">Otros</a></p>
+	    </div>
+	  </li>
+	  <li class='menu'><a href='#'>CONTÁCTANOS</a></li>
+	</ul>
+      </center>
       <script>
-        var prd_1=document.getElementByClassName('menu_product');
-        var prd_2=document.getElementByClassName('menu')[1];
-        var x=prd_1.style.
-        product_over(){
-            var prd=document.getElementByClassName('menu_product');
-            prd.style.color=rgba(224, 11, 11,0.5 );
-            
+	function ver() {
+        document.getElementById('prod').style.display="block";
+        }
+	function ocultar() {
+        document.getElementById('prod').style.display="none";
         }
       </script>
-      <a class='menu' href='#'>CONTÁCTANOS</a></center>
     </nav>
+    <div class="borrar"></div>
     <article>
       <p>Main page</p>
       <p>Main page</p>

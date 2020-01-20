@@ -1,14 +1,27 @@
+
 html,body {
     margin: 0px;
     padding: 0px;
-    background-color:rgba(182,216,242,1);
+    background-color:#7EE8FA;
 }
+/*
+
+#1B998B :Azul oscuro
+#ED217C :Rosado
+#E58C8A :Rojo
+#55DDFF :Cyan
+#7EE8FA :Cyan 2
+#FFF07C :Amarillo
+#FF9B71 :Naranja
+#80FF72 :Verde
+
+*/
 
 header{
     margin: 0px;
     width:100%;
     height:130px;
-    background-color:rgba(244,207,212,1);
+    background-color:#F3AABB;
     z-index:10;
     position: fixed;
     top:0px;
@@ -39,11 +52,11 @@ header img{
 }
 
 nav{
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:10%;
+    margin-right:10%;
     margin-top:130px;
     margin-bottom:0px;
-    background-color:rgba(57, 84, 186,1);
+    background-color:#1B998B/*rgba(57, 84, 186,1)*/;
     height: auto;
 }
 
@@ -57,7 +70,7 @@ nav ul li.menu{
     list-style-type:none;
     display: inline-block;
     vertical-align:middle;
-    background-color:rgba(182,216,242,1);
+    background-color:#55DDFF/*rgba(182,216,242,1)*/;
     height:25px;
     width:150px;
     position:relative;
@@ -97,27 +110,27 @@ nav ul li.menu a{
     font-size: 15px;
     display:none;
     font-family: 'Arvo', serif;
-    background-color:rgba(182,216,242,1);
+    background-color:#55DDFF;
 }
 
 li.menu:hover/*a link is hovered when the mouse is over it*/{
-    background-color:rgba(182,216,242,.5);
+    background-color:#80FF72;
     z-index:2;
 }
 
 #prod p:hover {
-    background-color:rgba(182,216,242,.5);
+    background-color:#80FF72;
 }
 
 
 .borrar { clear: both; }
 
 article{
-    margin-left:15%;
-    margin-right:15%;
+    margin-left:10%;
+    margin-right:10%;
     margin-top:0px;
     z-index:1;
-    background-color:rgba(247, 246,207,0.50);
+    background-color:#FFF07C;
     position:relative;
     top:-16px;
 }
@@ -130,7 +143,7 @@ article{
     position: absolute;
     right: 15%;
     top: 50%;
-    background-color:rgba(57, 84, 186,1);
+    background-color:#FF637D;
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
     padding:5px;
@@ -139,7 +152,7 @@ article{
 
 .foot{
     position:relative;
-    background-color:rgba(244,207,212,1);
+    background-color:#F3AABB/*rgba(233,187,181,1)*/;
     height:100px;
 }
 
@@ -169,7 +182,7 @@ article{
     position: fixed;
     right: 10%;
     top: 100%;
-    background-color:rgba(57, 84, 186,1);
+    background-color:#FF637D;
     transform:translate(0%,-100%);
     -ms-transform:translate(0%,-100%);
     padding:5px;

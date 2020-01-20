@@ -8,7 +8,7 @@ header{
     margin: 0px;
     width:100%;
     height:130px;
-    background-color:rgba(244,207,212,1);
+    background-color:rgba(182,216,242,1);
     z-index:10;
     position: fixed;
     top:0px;
@@ -97,16 +97,16 @@ nav ul li.menu a{
     font-size: 15px;
     display:none;
     font-family: 'Arvo', serif;
-    background-color:rgba(182,216,242,1);;
+    background-color:rgba(182,216,242,1);
 }
 
 li.menu:hover/*a link is hovered when the mouse is over it*/{
-    background-color:rgba(182,216,242,.5);;
+    background-color:rgba(182,216,242,.5);
     z-index:2;
 }
 
 #prod p:hover {
-    background-color:rgba(182,216,242,.5);;
+    background-color:rgba(182,216,242,.5);
 }
 
 
@@ -117,7 +117,7 @@ article{
     margin-right:15%;
     margin-top:0px;
     z-index:1;
-    background-color:rgba(182,216,242,1);;
+    background-color:rgba(247, 246,207,0.50);
     position:relative;
     top:-16px;
 }

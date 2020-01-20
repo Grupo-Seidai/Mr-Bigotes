@@ -8,7 +8,7 @@ header{
     margin: 0px;
     width:100%;
     height:130px;
-    background-color:rgba(255,130,130,1);
+    background-color:rgba(255,100,100,1);
     z-index:10;
     position: fixed;
     top:0px;
@@ -16,7 +16,7 @@ header{
 }
 
 header img{
-    
+
     background-color:rgba(0, 0, 0,0);
 }
 
@@ -134,4 +134,33 @@ article{
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
     padding:5px;
+}
+
+
+.foot{
+    position:relative;
+    background-color:rgba(255,100,100,1);
+    height:100px;
+}
+
+.network{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
+.copyright{
+    position:absolute;
+    top:60%;
+    transf0rm:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%);
+    position:relative;
+}
+
+.seidai{
+    text-align:center;
+    color:black;
+    font-family: 'Zilla Slab', serif;
 }

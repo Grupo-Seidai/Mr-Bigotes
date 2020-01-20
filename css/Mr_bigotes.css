@@ -97,7 +97,7 @@ nav ul li.menu a{
     font-size: 15px;
     display:none;
     font-family: 'Arvo', serif;
-    background-color:rgba(139,0,0,1);
+    background-color:rgba(182,216,242,1);;
 }
 
 li.menu:hover/*a link is hovered when the mouse is over it*/{
@@ -106,7 +106,7 @@ li.menu:hover/*a link is hovered when the mouse is over it*/{
 }
 
 #prod p:hover {
-    background-color:rgba( 224, 11, 11 ,.7);
+    background-color:rgba(182,216,242,.5);;
 }
 
 

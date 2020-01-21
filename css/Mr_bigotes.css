@@ -2,26 +2,14 @@
 html,body {
     margin: 0px;
     padding: 0px;
-    background-color:#7EE8FA;
+    background-color:rgba(180,255,140,.5);
 }
-/*
-
-#1B998B :Azul oscuro
-#ED217C :Rosado
-#E58C8A :Rojo
-#55DDFF :Cyan
-#7EE8FA :Cyan 2
-#FFF07C :Amarillo
-#FF9B71 :Naranja
-#80FF72 :Verde
-
-*/
 
 header{
     margin: 0px;
     width:100%;
     height:130px;
-    background-color:#F3AABB;
+    background-color:rgba(255,140,226,1);
     z-index:10;
     position: fixed;
     top:0px;
@@ -56,7 +44,7 @@ nav{
     margin-right:10%;
     margin-top:130px;
     margin-bottom:0px;
-    background-color:#1B998B/*rgba(57, 84, 186,1)*/;
+    background-color:rgba(146,140,255,1);
     height: auto;
 }
 
@@ -70,7 +58,6 @@ nav ul li.menu{
     list-style-type:none;
     display: inline-block;
     vertical-align:middle;
-    background-color:#55DDFF/*rgba(182,216,242,1)*/;
     height:25px;
     width:150px;
     position:relative;
@@ -78,7 +65,7 @@ nav ul li.menu{
 
 nav ul li.menu a{
     text-decoration:none;
-    color:white;
+    color:black;
     font-size: 15px;
     font-family: 'Arvo', serif;
     vertical-align:middle;
@@ -100,7 +87,15 @@ nav ul li.menu a{
     -ms-transform:translate(-50%,-50%);
 }
 
+.menubar{
+    margin:0px;
+    padding:0px;
+    height:25px;
+    background-color:rgba(140,255,238,1);
+}
+
 #prod{
+    padding-top:5px;
     position: absolute;
     z-index:3;
     top:100%;
@@ -110,16 +105,10 @@ nav ul li.menu a{
     font-size: 15px;
     display:none;
     font-family: 'Arvo', serif;
-    background-color:#55DDFF;
 }
 
-li.menu:hover/*a link is hovered when the mouse is over it*/{
-    background-color:#80FF72;
-    z-index:2;
-}
-
-#prod p:hover {
-    background-color:#80FF72;
+.menubar:hover{
+    background-color:rgba(180,255,140,1);
 }
 
 
@@ -128,9 +117,10 @@ li.menu:hover/*a link is hovered when the mouse is over it*/{
 article{
     margin-left:10%;
     margin-right:10%;
+    width:80%;
     margin-top:0px;
     z-index:1;
-    background-color:#FFF07C;
+    background-color:rgba(255,228,207,1);
     position:relative;
     top:-16px;
 }
@@ -143,16 +133,19 @@ article{
     position: absolute;
     right: 15%;
     top: 50%;
-    background-color:#FF637D;
+    background-color:rgba(146,140,255,.6);
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
     padding:5px;
 }
 
+.cart:hover {
+    background-color:rgba(146,140,255,1);
+}
 
 .foot{
     position:relative;
-    background-color:#F3AABB/*rgba(233,187,181,1)*/;
+    background-color:rgba(255,140,226,1);
     height:100px;
 }
 
@@ -165,7 +158,6 @@ article{
 }
 
 .copyright{
-    position:absolute;
     top:60%;
     transf0rm:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
@@ -182,12 +174,16 @@ article{
     position: fixed;
     right: 10%;
     top: 100%;
-    background-color:#FF637D;
+    background-color:rgba(146,140,255,.6);
     transform:translate(0%,-100%);
     -ms-transform:translate(0%,-100%);
     padding:5px;
     z-index:10;
     display:none;
     cursor:pointer;
+}
+
+#returnH:hover {
+    background-color:rgba(146,140,255,1);
 }
 

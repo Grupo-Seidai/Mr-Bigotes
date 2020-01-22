@@ -16,30 +16,21 @@
   <body>
 
     
-   <header>
-        <a  class='display-middle' href='#'>
-          <img src='images/Bigotes.svg' height="120px" width="120px"/>
+   <header class='head'>
+        <a  class='display-middle head' href='https://www.mr-bigotes.com.co'>
+          <img src='images/Bigotes.svg' height="100px" width="100px"/>
         </a>
-        <div class='cart'>
-          <a  href='#'>
-            <i class="material-icons md-36 md-dark">add_shopping_cart</i>
-          </a>
-        </div>
     </header>
 
    
-      <div id="returnH">
-        <span>
-          <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
-        </span>
-        <script src='js/arriba.js'></script>
-      </div>
+      
     
-    <nav>
+    <nav class='menu-all menu-nav'>
       <center>
-	<ul>
-	  <li class='menu display-container menubar'><a href='bigotes/Nosotros.html' class='display-middle'>NOSOTROS</a></li>
-	  <li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a onmouseover='show()' href='#' class='display-middle'>PRODUCTOS</a>
+        
+	<ul class='display-middle menu-all menu-ul'>
+	  <li class='menu display-container'><a href='bigotes/Nosotros.html' class='display-middle'>NOSOTROS</a></li>
+	  <li class='menu display-container' onmouseover="ver()" onmouseout="ocultar()"><a onmouseover='show()' href='#' class='display-middle'>PRODUCTOS</a>
 	    <div id="prod">
 	      <p class='menubar'><a href="#">Manillas</a></p>
 	      <p class='menubar'><a href="#">Collares</a></p>
@@ -49,12 +40,26 @@
 	  </li>
 	  <li class='menu display-container menubar'><a href='#' class='display-middle'>CONTÁCTANOS</a></li>
 	</ul>
+      
       </center>
+      
+        <div class='cart'>
+          <a  href='#'>
+            <i class="material-icons md-36 md-dark">add_shopping_cart</i>
+          </a>
+        </div>
+        
+        <div id="returnH">
+          <span>
+            <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
+          </span>
+          <script src='js/arriba.js'></script>
+        </div>
     </nav>
 
 
     
-    <div class="borrar"></div>
+    <div class="borrar display-container"></div>
     <article>
       <p>Main page</p>
       <p>Main page</p>
@@ -75,7 +80,7 @@
       <p>Main page</p>
       <p>Main page</p>
     </article>
-
+    
     <footer class='foot'>
       <div class='network'>
         <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="fa fa-facebook"></a>

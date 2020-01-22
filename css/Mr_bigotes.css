@@ -1,24 +1,19 @@
-
 html,body {
     margin: 0px;
     padding: 0px;
-    background-color:rgba(180,255,140,.5);
+    background-color:rgba(255,228,207,1);
 }
 
-header{
+.head{
     margin: 0px;
-    width:100%;
-    height:130px;
-    background-color:rgba(255,140,226,1);
+    padding:0px;
+    width:100px;
+    height:100px;
     z-index:10;
-    position: fixed;
+    position: absolute;
     top:0px;
     left:0px;
-}
-
-header img{
-
-    background-color:rgba(0, 0, 0,0);
+    background-color:rgba(202,159,176,1);
 }
 
 @media (min-width:993px) {
@@ -39,25 +34,27 @@ header img{
     }
 }
 
-nav{
-    margin-left:10%;
-    margin-right:10%;
-    margin-top:130px;
-    margin-bottom:0px;
+.menu-nav{
+    width:100%;
     background-color:rgba(146,140,255,1);
-    height: auto;
+    height: 46px;
+    position: relative;
 }
 
-nav ul{
-    list-style-type:none;
+.menu-all{
+    z-index:9;
     padding:0px;
+    margin:0px;
+    position: relative;
+}
+
+.menu-ul{
+    list-style-type:none;
 }
 
 nav ul li.menu{
     margin:7px 10px;
-    list-style-type:none;
     display: inline-block;
-    vertical-align:middle;
     height:25px;
     width:150px;
     position:relative;
@@ -68,7 +65,6 @@ nav ul li.menu a{
     color:black;
     font-size: 15px;
     font-family: 'Arvo', serif;
-    vertical-align:middle;
     display:block;
     position:relative;
     height:20px;
@@ -87,11 +83,13 @@ nav ul li.menu a{
     -ms-transform:translate(-50%,-50%);
 }
 
+
+
 .menubar{
     margin:0px;
     padding:0px;
     height:25px;
-    background-color:rgba(140,255,238,1);
+    background-color:rgba(146,140,255,1);
 }
 
 #prod{
@@ -105,24 +103,26 @@ nav ul li.menu a{
     font-size: 15px;
     display:none;
     font-family: 'Arvo', serif;
+    background:rgba(146,140,255,1);
 }
 
 .menubar:hover{
-    background-color:rgba(180,255,140,1);
+    background-color:rgba(0,0,0,0.2);
 }
 
 
-.borrar { clear: both; }
+.borrar {
+    height:54px;
+}
 
 article{
-    margin-left:10%;
-    margin-right:10%;
-    width:80%;
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
     margin-top:0px;
     z-index:1;
-    background-color:rgba(255,228,207,1);
+    background-color:rgba(255,228,207,0);
     position:relative;
-    top:-16px;
 }
 
 #loader{
@@ -131,21 +131,21 @@ article{
 
 .cart {
     position: absolute;
-    right: 15%;
+    right: 5%;
     top: 50%;
-    background-color:rgba(146,140,255,.6);
+    background-color:rgba(126, 72, 174,1);
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
     padding:5px;
 }
 
 .cart:hover {
-    background-color:rgba(146,140,255,1);
+    background-color:rgba(126, 72, 174,.5);
 }
 
 .foot{
     position:relative;
-    background-color:rgba(255,140,226,1);
+    background-color:rgba(202,159,176,1);
     height:100px;
 }
 
@@ -172,9 +172,9 @@ article{
 
 #returnH {
     position: fixed;
-    right: 10%;
+    right: 5%;
     top: 100%;
-    background-color:rgba(146,140,255,.6);
+    background-color:rgba(126, 72, 174,1);
     transform:translate(0%,-100%);
     -ms-transform:translate(0%,-100%);
     padding:5px;
@@ -184,6 +184,6 @@ article{
 }
 
 #returnH:hover {
-    background-color:rgba(146,140,255,1);
+    background-color:rgba(126, 72, 174,.5);
 }
 

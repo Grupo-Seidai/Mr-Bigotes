@@ -1,0 +1,81 @@
+.formu{width:340px;
+      height:340px;
+      background:#FFFFFF;
+      border-radius:8px;
+      box-shadow:0 0 40px -10px #000;
+      margin:0px;
+      padding:20px 30px;
+      max-width:calc(100vw - 40px);
+      box-sizing:border-box;
+      font-family: 'Arvo', serif;
+      position:relative;
+      top:50%;
+      left:30%;
+      transform:translate(-50%,0%);
+      -ms-transform:translate(-50%,0%);
+      }
+
+.Cont{width:500px;
+      background:rgba(0,0,0,0);
+      margin:0px;
+      padding:20px 30px;
+      font-family: 'Arvo', serif;
+      position:absolute;
+      top:50%;
+      left:70%;
+      transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-500%);
+     }
+
+.Contl{
+    list-style-type:none;
+    margin:10px 0px;
+}
+
+.Contact{margin:10px 0;
+	 padding-bottom:10px;
+	 width:180px;
+	 color:#78788c;
+	 border-bottom:3px solid #78788c
+	}
+
+.C_in{width:100%;
+      padding:10px;
+      box-sizing:border-box;
+      background:none;
+      outline:none;
+      resize:none;
+      border:0px;
+      font-family: 'Arvo', serif;
+      transition:all .3s;
+      border-bottom:2px solid #bebed2;
+     }
+
+
+.C_in:focus{
+    border-bottom:2px solid #78788c;
+}
+
+
+button{
+    float:right;
+    padding:8px 12px;
+    margin:18px 0 0;
+    font-family: 'Arvo', serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+
+
+button:hover{
+    background:#78788c;
+    color:#fff
+}
+
+.Contenedor{
+    width:100%;
+    display:inline-block;
+}

@@ -191,3 +191,18 @@ article{
     background-color:rgba(126, 72, 174,.5);
 }
 
+.Nosotros{
+    margin:0px;
+    position:relative;    
+    top:10%;
+    left:5%;
+    transf0rm:translate(0%,50%);
+    -ms-transform:translate(0%,50%);
+    width:90%
+}
+
+.Ptitle{
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+
+}

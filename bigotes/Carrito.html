@@ -35,7 +35,7 @@
      <nav class='menu-all menu-nav'>
       <center>
 
-        <ul class='display-middle menu-all menu-ul'>
+        <ul class='display-middle menu-all menu-ul hide-small hide-medium'>
           <li class='menu display-container menubar'><a href='Nosotros.html' class='display-middle'>NOSOTROS</a></li>
           <li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='Productos.html' class='display-middle'>PRODUCTOS</a>
             <div id="prod">
@@ -56,6 +56,10 @@
           </a>
         </div>
 
+        <div id='b_menu' class='disp_menu hide-large'>
+            <i id='b_menu' class="material-icons md-36 md-dark">menu</i>
+        </div>
+
         <div id="returnH">
           <span>
             <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
@@ -63,6 +67,19 @@
           <script src='js/arriba.js'></script>
         </div>
     </nav>
+
+    <div id="menu_oculto" class="menu_oculto">
+      <ul class='menu-all menu-ul hide-large'>
+	<li class='menu display-container menubar'><a href='bigotes/Nosotros.html' class='display-middle menu-d'>NOSOTROS</a></li>
+	<li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='bigotes/Productos.html' class='display-middle menu-d'>PRODUCTOS</a>
+	</li>
+	<p class='menu display-container menubar-d'><a href="#" class='display-middle menu-d'>Manillas</a></p>
+	<p class='menu display-container menubar-d'><a href="#" class='display-middle menu-d'>Collares</a></p>
+	<p class='menu display-container menubar-d'><a href="#" class='display-middle menu-d'>Aretes</a></p>
+	<p class='menu display-container menubar-d'><a href="#" class='display-middle menu-d'>Otros</a></p>
+	<li class='menu display-container menubar'><a href='bigotes/Contactanos.html' class='display-middle menu-d'>CONTÁCTANOS</a></li>
+      </ul>
+    </div>
 
 
     <div class="decoration"></div>

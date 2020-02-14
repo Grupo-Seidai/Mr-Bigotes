@@ -22,7 +22,6 @@
     background:rgba(0,0,0,0);
     margin:0px;
     padding:20px 30px;
-    font-family: 'Arvo', serif;
     position:absolute;
     top:50%;
     left:70%;
@@ -33,13 +32,15 @@
 .Contl{
     list-style-type:none;
     margin:10px 0px;
+    font-family: 'Zilla Slab', serif;
 }
 
 .Contl_A{
     font-weight:bold;
     list-style-type:none;
     margin:10px 0;
-    margin-bottom:20px
+    margin-bottom:20px;
+    font-family: 'Arvo', serif;
 }
 
 .Contact{margin:10px 0;
@@ -56,7 +57,7 @@
       outline:none;
       resize:none;
       border:0px;
-      font-family: 'Arvo', serif;
+      font-family: 'Zilla Slab', serif;
       transition:all .3s;
       border-bottom:2px solid #bebed2;
      }

@@ -1,5 +1,5 @@
 #p-float {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     /* Clearfix */
     overflow: auto;
@@ -13,13 +13,13 @@
 /* Product items */
 div.p-float {
     float: left;
-    width: 25%;
+    width: 20%;
 }
 div.p-float-in {
     box-sizing: border-box;
     margin: 5px; 
     padding: 10px;
-    border: 1px solid #f2dcdc;
+    border: 2px solid rgba(193, 53, 132 ,1);
     background:rgba(146,140,255,.3);
 }
 img.p-img {
@@ -27,19 +27,23 @@ img.p-img {
     height: auto;
 }
 div.p-name {
+    color:rgba(0,0,0,1);
     font-weight: bold;
     font-size: 1.1em;
+    font-family: 'Playfair Display', serif;
 }
 div.p-price {
     color:rgba(193, 53, 132 ,1);
+    font-family: 'Zilla Slab', serif;
 }
 div.p-desc {
-    color:rgba(1,1,1,.8);
+    color:rgba(0,0,0,.8);
     font-size: 0.9em;
+    font-family: 'Zilla Slab', serif;
 }
 button.p-add {
     background: rgba(126, 72, 174,1);
-    color: #fff;
+    color:rgba(255,255,255,1);
     border: none;
     width: 100%;
     padding: 10px;

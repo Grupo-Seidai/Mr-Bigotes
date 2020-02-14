@@ -189,7 +189,7 @@ article{
 
 .copyright{
     top:60%;
-    transf0rm:translate(0%,-50%);
+    transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
     position:relative;
 }
@@ -222,7 +222,7 @@ article{
     position:relative;    
     top:10%;
     left:5%;
-    transf0rm:translate(0%,50%);
+    transform:translate(0%,0%);
     -ms-transform:translate(0%,50%);
     width:90%
 }

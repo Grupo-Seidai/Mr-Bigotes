@@ -86,3 +86,22 @@
     font-family: 'Zilla Slab', serif;
     font-size:18px;
 }
+
+.description-s{
+    width:100%;
+    top:0%;
+    right:0%;
+    transform:translate(0%,0%);
+    -ms-transform:translate(0%,0%);
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.img-slideshow-s{
+    width:100%;
+    top:0%;
+    left:0%;
+    transform:translate(0%,0%);
+    -ms-transform:translate(0%,0%);
+    margin-bottom:30px;
+}

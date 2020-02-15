@@ -105,3 +105,14 @@
     -ms-transform:translate(0%,0%);
     margin-bottom:30px;
 }
+
+.principal-img-s{
+    width:80%;
+    margin: 0% 10% 0px 10%;
+}
+
+.img-mini-s{
+    margin:0px 10% 0px 10%;
+    width:80%;
+    display:inline-block;
+}

@@ -1,0 +1,35 @@
+.img-slideshow{
+    width:50%;
+    top:0%;
+    left:0%;
+    transform:translate(0%,0%);
+    -ms-transform:translate(0%,0%);
+    margin-bottom:30px;
+}
+
+.principal-img{
+    width:80%;
+    margin: 5% 10% 0px 10%;
+}
+
+.principal-img-fl{
+    width:100%;
+}
+
+.img-mini{
+    margin:0px 10%;
+    width:80%;
+    display:inline-block;
+}
+
+.mini-img{
+    width:20%;
+    float:left;
+    margin-left:2.5%;
+    margin-right:2.5%;
+}
+
+.mini-img-fl{
+    width:100%;
+    cursor:pointer;
+}

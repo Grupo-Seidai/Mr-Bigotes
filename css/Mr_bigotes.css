@@ -223,7 +223,7 @@ article{
     top:10%;
     left:5%;
     transform:translate(0%,0%);
-    -ms-transform:translate(0%,50%);
+    -ms-transform:translate(0%,0%);
     width:90%
 }
 

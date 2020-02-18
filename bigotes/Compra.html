@@ -8,7 +8,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href='../css/Mr_bigotes.css'>
-    <link rel="stylesheet" type="text/css" href='css/Carrito/Carrito.css'>
+    <link rel="stylesheet" type="text/css" href='css/Compra/Compra.css'>
     <link rel="stylesheet" type="text/css" href='../css/icons.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -86,16 +86,74 @@
     <div class="borrar"></div>
 
     <article>
-      <h1 class="Ptitle Article">Tu Carrito</h1>
+      <h1 class="hide-medium hide-small Ptitle_l Article_l">Finaliza Tu Compra</h1>
+      <h1 class="hide-large Ptitle_s Article_s">Finaliza Tu Compra</h1>
 
-       <div id="L_size" class="hide-medium hide-small display-container">
+       <div id="L_size" class="hide-medium hide-small display-container size_L">
 
-         <div id="cc_L" class="ccontent">
+          <div id="cc_L" class="Compra_L">
+            
+         </div>         
+         
 
-           
-         </div>
+         
+         <div class="ccontent_L">
 
-         <div id="cpay_L" class="cpay">
+           <form id="MPago_L" name="R_pago_l"  class="Pago_l" action="https://formspree.io/mknrdwkp" method="POST">
+
+             
+
+             <div class="frm_entry_l_f">
+
+               <b>Nombre(s):</b>
+               <input type='text' class='frm_input' name='Nombres' required></input>
+
+             </div>
+             
+             <div class="frm_entry_l_f">
+
+               <b>Apellido(s):</b>
+               <input type='text' class='frm_input' name='Apellidos' required></input>
+
+             </div>
+
+             <div class="frm_entry_l">
+
+               <b>Dirección:</b>
+               <input type='text' class='frm_input' name='Dirección' required></input>
+
+             </div>
+
+             
+             <div class="frm_entry_l">
+               
+               <b>Correo Electrónico:</b>
+               <input type='text' class='frm_input' name='e-mail' required></input>
+               
+             </div>
+
+             
+             <div class="frm_entry_l">
+
+               <b>Medio de pago:</b>
+
+               <div class="m_p_select_l">
+                 <select name="medio_de_pago_l">
+                   <option value="Pago_en_casa">Pago en casa</option>
+                   <option value="Consignación_Bancaria">Consignación Bancaria</option>
+                 </select>
+               </div>
+               
+             </div>
+
+             
+             <div class="frm_entry_l">
+               
+               <input class="frm_input_su" type="submit" value="Efectuar Compra" onclick="R_Com()"></input>
+               
+             </div>
+             
+           </form>
 
          </div>         
          
@@ -103,19 +161,76 @@
 
        <div id="S_size" class="hide-large display-container">
 
-         <div id="cc_S" class="ccontent">
+         <div id="cc_S" class="Compra_S">
            
          </div>
 
-         <div id="cpay_S" class="cpay">
-           
-         </div>
+          <div class="ccontent_S">
+
+           <form id="MPago_L" class="Pago_l" name="R_pago_s" action="https://formspree.io/mknrdwkp" method="POST">
+
+             
+
+             <div class="frm_entry_l_f">
+
+               <b>Nombre(s):</b>
+               <input type='text' class='frm_input' name='Nombres' required></input>
+
+             </div>
+             
+             <div class="frm_entry_l_f">
+
+               <b>Apellido(s):</b>
+               <input type='text' class='frm_input' name='Apellidos' required></input>
+
+             </div>
+
+             <div class="frm_entry_s">
+
+               <b>Dirección:</b>
+               <input type='text' class='frm_input' name='Dirección' required></input>
+
+             </div>
+
+             <div class="frm_entry_s">
+
+               <b>Correo Electrónico:</b>
+               <input type='text' class='frm_input' name='e-mail' required></input>
+
+             </div>
+
+             
+             <div class="frm_entry_s">
+
+               <b>Medio de pago:</b>
+
+               <div class="m_p_select_l">
+                 <select name="medio_de_pago_s">
+                   <option value="Pago_en_casa">Pago en casa</option>
+                   <option value="Consignación_Bancaria">Consignación Bancaria</option>
+                 </select>
+               </div>
+               
+             </div>
+
+             
+             <div class="frm_entry_l">
+               
+               <input class="frm_input_su" type="submit" value="Efectuar Compra" onclick="R_Com()"></input>
+               
+             </div>
+             
+           </form>
+
+         </div>         
+         
+       </div>
          
       </div>
       
        <script src="Productos/ref/js/add_cart.js"></script>
        
-       <script src="js/Carrito/Carrito.js"></script>
+       <script src="js/Compra/Compra.js"></script>
        
     </article>
     

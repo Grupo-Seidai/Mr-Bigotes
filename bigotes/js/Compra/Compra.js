@@ -171,44 +171,56 @@ function make_cart(){
         
         ccontent_l.appendChild(total_l);
         ccontent_s.appendChild(total_s);
-        
-        
-        var cpay_l=document.getElementById("cpay_L");
-        var cpay_s=document.getElementById("cpay_S");
-        
-        
-        
-        var pay_b_l=document.createElement("a");
-        var pay_b_s=document.createElement("a");
-        pay_b_l.setAttribute('style','float:right; background: rgba(126, 72, 174,1); text-align:center;padding:10px;color:rgba(0,0,0,1);font-weight: bold;font-size: 20px;font-family: \'Arvo\', serif;text-decoration:none');
-        pay_b_s.setAttribute('style','float:right;background: rgba(126, 72, 174,1); text-align:center; padding:10px;color:rgba(0,0,0,1);font-weight: bold;font-size: 20px;font-family: \'Arvo\', serif;text-decoration:none');
-        pay_b_l.innerHTML="Confirmar Compra";
-        pay_b_s.innerHTML="Confirmar Compra";
-        pay_b_l.setAttribute('href',"Compra.html");
-        pay_b_s.setAttribute('href',"Compra.html");
-        pay_b_s.onmouseover = function(){pay_b_s.style.background="rgba(126, 72, 174,.5)"};
-        pay_b_l.onmouseover = function(){pay_b_l.style.background="rgba(126, 72, 174,.5)"};
-        pay_b_s.onmouseout = function(){pay_b_s.style.background="rgba(126, 72, 174,1)"};
-        pay_b_l.onmouseout = function(){pay_b_l.style.background="rgba(126, 72, 174,1)"};
-        pay_b_s.onclick = function(){
-            mk_cookie();
-        };
-        pay_b_l.onclick = function(){
-            mk_cookie();
-        };
-        
-        
-        cpay_l.appendChild(pay_b_l);
-        cpay_s.appendChild(pay_b_s);
-    
+
 }
 
 make_cart();
 
 
-alert("¡Muchas gracias por adquirir nuestros productos!\n en breve te llegará un correo con las instrucciones de acuerdo al modo de pago que selecionaste.");
-
-
 function R_Com(){
-    alert("¡Muchas gracias por adquirir nuestros productos!\n en breve te llegará un correo con las instrucciones de acuerdo al modo de pago que selecionaste.");
+    if(parseFloat(document.documentElement.clientWidth)>=993){
+        var a=document.forms["R_pago_l"]["Nombres"].value;
+        var b=document.forms["R_pago_l"]["Apellidos"].value;
+        var c=document.forms["R_pago_l"]["Dirección"].value;
+        var f=document.forms["R_pago_l"]["Celular"].value;
+        var d=document.forms["R_pago_l"]["e-mail"].value;
+        var e=document.forms["R_pago_l"]["medio_de_pago_l"].value;
+
+        if(a=="" || b=="" || c=="" || d=="" || f==""){
+            alert("¡Por favor llena los campos!");
+            return false;
+        }else if(!validateEmail(d)){
+            alert("¡Por favor ingresa una dirección de correo válida! es para poder contactarte");
+            return false;
+        }else{
+            alert("¡Muchas gracias por adquirir nuestros productos!\n en breve te llegará un correo con las instrucciones de acuerdo al modo de pago que selecionaste.");
+            return true;
+        }
+    }else{
+       var a=document.forms["R_pago_s"]["Nombres"].value;
+        var b=document.forms["R_pago_s"]["Apellidos"].value;
+        var c=document.forms["R_pago_s"]["Dirección"].value;
+        var f=document.forms["R_pago_s"]["Celular"].value;
+        var d=document.forms["R_pago_s"]["e-mail"].value;
+        var e=document.forms["R_pago_s "]["medio_de_pago_s"].value;
+
+        if(a=="" || b=="" || c=="" || d=="" || f==""){
+            alert("¡Por favor llena los campos!");
+            return false;
+        }else if(!validateEmail(d)){
+            alert("¡Por favor ingresa una dirección de correo válida! es para poder contactarte");
+            return false;
+        }else{
+            alert("¡Muchas gracias por adquirir nuestros productos!\n en breve te llegará un correo con las instrucciones de acuerdo al modo de pago que selecionaste.");
+            return true;
+        }
+    }
 }
+
+function validateEmail(email) 
+{
+  var re = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
+
+  return re.test(email);
+}
+

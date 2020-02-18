@@ -99,7 +99,7 @@
          
          <div class="ccontent_L">
 
-           <form id="MPago_L" name="R_pago_l"  class="Pago_l" action="https://formspree.io/mknrdwkp" method="POST">
+           <form id="MPago_L" name="R_pago_l"  class="Pago_l" action="https://formspree.io/mknrdwkp" onsubmit="R_Com()" method="POST">
 
              
 
@@ -124,11 +124,18 @@
 
              </div>
 
+             <div class="frm_entry_l">
+
+               <b>Celular:</b>
+               <input type='text' class='frm_input' name='Celular' required></input>
+
+             </div>
+
              
              <div class="frm_entry_l">
                
                <b>Correo Electrónico:</b>
-               <input type='text' class='frm_input' name='e-mail' required></input>
+               <input type='email' class='frm_input' name='e-mail' required></input>
                
              </div>
 
@@ -149,7 +156,7 @@
              
              <div class="frm_entry_l">
                
-               <input class="frm_input_su" type="submit" value="Efectuar Compra" onclick="R_Com()"></input>
+               <input class="frm_input_su" type="submit" value="Efectuar Compra"></input>
                
              </div>
              
@@ -167,7 +174,7 @@
 
           <div class="ccontent_S">
 
-           <form id="MPago_L" class="Pago_l" name="R_pago_s" action="https://formspree.io/mknrdwkp" method="POST">
+           <form id="MPago_L" class="Pago_l" name="R_pago_s" action="https://formspree.io/mknrdwkp" onsubmit="R_Com()" method="POST">
 
              
 
@@ -194,8 +201,15 @@
 
              <div class="frm_entry_s">
 
+               <b>Celular:</b>
+               <input type='text' class='frm_input' name='Celular' required></input>
+
+             </div>
+
+             <div class="frm_entry_s">
+
                <b>Correo Electrónico:</b>
-               <input type='text' class='frm_input' name='e-mail' required></input>
+               <input type='email' class='frm_input' name='e-mail' required></input>
 
              </div>
 
@@ -216,7 +230,7 @@
              
              <div class="frm_entry_l">
                
-               <input class="frm_input_su" type="submit" value="Efectuar Compra" onclick="R_Com()"></input>
+               <input class="frm_input_su" type="submit" value="Efectuar Compra"></input>
                
              </div>
              

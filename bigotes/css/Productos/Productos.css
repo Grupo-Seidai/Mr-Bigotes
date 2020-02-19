@@ -63,12 +63,10 @@ div.p-price {
 }
 /* Responsive */
 @media only screen and (max-width: 1024px) {
-    div.p-float { width: 33%; }
-   
-
+    div.p-float { width: 50%; }
+ 
 }
 @media only screen and (max-width: 600px) {
-    div.p-float { width: 50%; }
-   
+    div.p-float { width: 100%; }
     
 }

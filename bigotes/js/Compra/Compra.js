@@ -52,7 +52,7 @@ function make_cart(){
         
         var name_l=document.createElement("p");
         var name_s=document.createElement("p");
-        name_l.setAttribute('style','float:left;text-align:center;width:30%;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
+        name_l.setAttribute('style','float:left;text-align:center;width:30%;margin:5px 0px 0px 0;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
         name_s.setAttribute('style','text-align:center; margin:0;color:rgba(0,0,0,1);font-size: 10px;font-family: \'Arvo\', serif;');
             name_l.innerHTML=prod_info[1];
             name_s.innerHTML=prod_info[1];
@@ -63,7 +63,7 @@ function make_cart(){
             
             var uni_l=document.createElement("p");
             var uni_s=document.createElement("p");
-            uni_l.setAttribute('style','float:left;text-align:center;width:20%;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
+            uni_l.setAttribute('style','float:left;text-align:center;margin:5px 0px 0px 0;width:20%;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
             uni_s.setAttribute('style','text-align:center; margin:5px 0 0px 0;color:rgba(0,0,0,1);font-size: 10px;font-family: \'Arvo\', serif;');
             if(prod_info[0]=='U'){
                 uni_l.innerHTML=1;
@@ -79,7 +79,7 @@ function make_cart(){
             
             var p_uni_l=document.createElement("p");
             var p_uni_s=document.createElement("p");
-            p_uni_l.setAttribute('style','float:left;text-align:center;width:30%;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
+            p_uni_l.setAttribute('style','float:left;text-align:center;width:30%;margin:5px 0px 0px 0;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
             p_uni_s.setAttribute('style','text-align:center; margin:5px 0 0px 0;color:rgba(0,0,0,1);font-size: 10px;font-family: \'Arvo\', serif;');
             p_uni_l.innerHTML="$"+prod_info[2];
             p_uni_s.innerHTML="Precio u: $"+prod_info[2];
@@ -90,7 +90,7 @@ function make_cart(){
                  
             var prec_l=document.createElement("p");
             var prec_s=document.createElement("p");
-            prec_l.setAttribute('style','float:left;text-align:center;width:15%;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
+            prec_l.setAttribute('style','float:left;text-align:center;width:15%;margin:5px 0px 0px 0;color:rgba(0,0,0,1);font-size: 15px;font-family: \'Playfair Display\', serif;');
             prec_s.setAttribute('style','text-align:center; margin:5px 0 0px 0;color:rgba(0,0,0,1);font-size: 10px;font-family: \'Arvo\', serif;');
             prec_l.setAttribute('class','p_Precio_l');
             prec_s.setAttribute('class','p_Precio_s');

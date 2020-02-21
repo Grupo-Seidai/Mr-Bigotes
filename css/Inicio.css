@@ -14,18 +14,38 @@
 }
 
 .Text_info_a_L{
+    padding:1%;
     color:black;
     text-align:center;
     font-size: 50px;
     font-family: 'Arvo', serif;
     position:absolute;
     width:35%;
-    top:50%;
+    top:0%;
     left:55%;
-    transform:translate(0%,-0%);
-    -ms-transform:translate(0%,-0%);
-    background-color:
-rgba(255,228,207,1);
+    transform:translate(0%,50%);
+    -ms-transform:translate(0%,50%);
+    background-color:rgba(255,228,207,1);
+}
+
+.Text_info_c_L{
+    padding:3% 0%;
+    color:black;
+    text-align:center;
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(255,228,207,0);
+}
+
+
+
+.Text_info_b_L{ margin:20px 15% ;
+    color:black;
+    text-align:center;
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+    width:70%;
+    background-color:rgba(255,228,207,0);
 }
 
 .Article_inicio{
@@ -36,3 +56,34 @@ rgba(255,228,207,1);
     background-color:rgba(255,228,207,0);
     position:relative;
 }
+
+.Us_L{
+    width:100%;
+    height:500px;
+    margin:0;
+    overflow:hidden;
+    background-color:rgba(146,140,255,1);
+}
+
+.Camara_image_L{
+    margin-right:5%;
+    height:100%;
+    top:0%;
+    float:left;
+    transform:translate(0%,0%);
+    -ms-transform:translate(0%,0%);
+}
+
+.Us_bt_L{
+    position:absolute;
+    padding:.5%;
+    text-decoration:none;
+    color:black;
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(126, 72, 174,1);
+    left:50%;;
+    transform:translate(80%,0%);
+    -ms-transform:translate(-80%,0%);
+}
+

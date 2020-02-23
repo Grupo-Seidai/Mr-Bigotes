@@ -74,3 +74,10 @@ $('.chngJ').on({
         $('.principal-img-fl').attr("src",img_mini);
     }
 });
+
+$('.chngK').on({
+    'click': function(){
+        var img_mini=$('.chngK').attr("src");
+        $('.principal-img-fl').attr("src",img_mini);
+    }
+});

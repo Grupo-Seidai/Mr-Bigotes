@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    
+    <title>Mr Bigotes|Carta de Producto</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href='../../../css/Mr_bigotes.css'>
+    <link rel="stylesheet" type="text/css" href='../../css/Productos/Productos.css'>
+    <link rel="stylesheet" type="text/css" href='../../../css/icons.css'>
+    <link rel="stylesheet" type="text/css" href='css/Prd_Pg.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--STYLE/google.fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Playfair+Display|Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--JQuery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+  </head>
+  <body>
+    
+    
+    <header class='head'>
+        <a  class='display-middle head' href='../../../index.html'>
+          <img src='../../../images/Bigotes.svg' height="100px" width="100px"/>
+        </a>
+    </header>
+    
+    
+    
+     
+     <nav class='menu-all menu-nav'>
+      <center>
+        
+	<ul class='display-middle menu-all menu-ul hide-small hide-medium'>
+	  <li class='menu display-container menubar'><a href='../../Nosotros.html' class='display-middle'>NOSOTROS</a></li>
+	  <li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='../../Productos.html' class='display-middle'>PRODUCTOS</a>
+	    <div id="prod">
+	      <p class='menubar'><a href="../Manillas.html">Manillas</a></p>
+	      <p class='menubar'><a href="../Collares.html">Collares</a></p>
+	      <p class='menubar'><a href="../Aretes.html">Aretes</a></p>
+	      <p class='menubar'><a href="../Otros.html">Otros</a></p>
+	    </div>
+	  </li>
+	  <li class='menu display-container menubar'><a href='../../Contactanos.html' class='display-middle'>CONTÁCTANOS</a></li>
+	</ul>
+      
+      </center>
+      
+        <div class='cart'>
+          <a  href='../../Carrito.html'>
+            <i class="material-icons md-36 md-dark">add_shopping_cart</i>
+          </a>
+        </div>
+
+        <div id='b_menu' class='disp_menu hide-large'>
+            <i id='b_menu' class="material-icons md-36 md-dark">menu</i>
+        </div>
+        
+        <div id="returnH">
+          <span>
+            <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
+          </span>
+          <script src='../../../js/arriba.js'></script>
+        </div>
+    </nav>
+
+    <div id="menu_oculto" class="menu_oculto">
+      <ul class='menu-all menu-ul hide-large'>
+	<li class='menu display-container menubar'><a href='../../Nosotros.html' class='display-middle menu-d'>NOSOTROS</a></li>
+	<li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='../../Productos.html' class='display-middle menu-d'>PRODUCTOS</a>
+	</li>
+	<p class='menu display-container menubar-d'><a href="../Manillas.html" class='display-middle menu-d'>Manillas</a></p>
+	<p class='menu display-container menubar-d'><a href="../Collares.html" class='display-middle menu-d'>Collares</a></p>
+	<p class='menu display-container menubar-d'><a href="../Aretes.html" class='display-middle menu-d'>Aretes</a></p>
+	<p class='menu display-container menubar-d'><a href="../Otros.html" class='display-middle menu-d'>Otros</a></p>
+	<li class='menu display-container menubar'><a href='../../Contactanos.html' class='display-middle menu-d'>CONTÁCTANOS</a></li>
+      </ul>
+    </div>
+
+     
+    <div class="decoration"></div>
+    <div class="borrar"></div>
+    
+    <article>
+
+      <div class="hide-medium hide-small display-container">
+
+        <div class="img-slideshow">
+          <div class="principal-img"><img class='principal-img-fl' src="../images/M08-18-P.JPG"/></div>
+          <div class="img-mini">
+            <div class="mini-img"><img class='mini-img-fl chngP' src="../images/M08-18-P.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngA' src="../images/M08-18-A.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngB' src="../images/M08-18-B.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngC' src="../images/M08-18-C.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngD' src="../images/M08-18-D.JPG"/></div>
+          </div>
+        </div>
+        
+        <div class="description">
+          <div id="Pname" class="Product-Name">Manilla Gatos Negros</div>
+          <div id="Pprice" class="p-price">$24500.00</div>
+          
+          <div class="p-desc">Manilla hecha con hilo y mostazilla de 12.5cm de largo por 2.2cm de ancho, con broches de metal y cadena con adorno al final de un ratón, diseño original de dos gatos negros, perfecta para los amantes de los felinos.</div>
+          <div class="p-desc"><b>Producto único.</b></div>
+          
+          <form id="add-to-cart-U">
+            <input class="subm" type="button" onclick="Submit()" value="Añadir al Carrito"></input>
+          </form>
+        </div>
+
+      </div>
+
+       <div class="hide-large">
+
+        <div class="img-slideshow-s">
+          <div class="principal-img-s"><img class='principal-img-fl' src="../images/M08-18-P.JPG"/></div>
+          <div class="img-mini-s">
+            <div class="mini-img"><img class='mini-img-fl chngP' src="../images/M08-18-P.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngA' src="../images/M08-18-A.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngB' src="../images/M08-18-B.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngC' src="../images/M08-18-C.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngD' src="../images/M08-18-D.JPG"/></div>
+          </div>
+        </div>
+        
+        <div class="description-s">
+          <div id="Pname" class="Product-Name">Manilla Gatos Negros</div>
+          <div id="Pprice" class="p-price">$24500.00</div>
+          
+          <div class="p-desc">Manilla hecha con hilo y mostazilla de 12.5cm de largo por 2.2cm de ancho, con broches de metal y cadena con adorno al final de un ratón, diseño original de dos gatos negros, perfecta para los amantes de los felinos.</div>
+          <div class="p-desc"><b>Producto único.</b></div>
+          
+          <form id="add-to-cart-U">
+            <input class="subm" type="button" onclick="Submit()" value="Añadir al Carrito"></input>
+          </form>
+          <script src="js/add_cart.js"></script>
+        </div>
+
+      </div>
+      
+    </article>
+    <script src="js/sldshw.js"></script>
+
+    <footer class='foot'>
+      <div class='network'>
+        <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/mr._.bigotes/?hl=es-la" class="fa fa-instagram"></a>
+      </div>
+      <div class="copyright">
+        <p class='seidai'>Grupo Seidai</p>
+      </div>
+    </footer>
+    
+    <script src="../../../js/bar.js"></script>
+  </body>
+</html>

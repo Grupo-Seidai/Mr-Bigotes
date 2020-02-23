@@ -224,3 +224,12 @@ function validateEmail(email)
   return re.test(email);
 }
 
+function R_Ped(){
+    if(parseFloat(document.documentElement.clientWidth)>=993){
+        document.forms["R_pago_l"]["pedido"].value=document.cookie;
+    }else{
+        document.forms["R_pago_s"]["pedido"].value=document.cookie;
+    }
+}
+
+R_Ped()

@@ -164,8 +164,10 @@ function make_cart(){
             var pht_s=document.createElement("img");
             pht_l.setAttribute('style','width:100%;');
             pht_s.setAttribute('style','width:100%;');
-            pht_l.setAttribute("src",'Productos'+prod_info[3].split('..')[1]);
-            pht_s.setAttribute("src",'Productos'+prod_info[3].split('..')[1]);
+            pht_l.setAttribute("src",prod_info[3]);
+            pht_s.setAttribute("src",prod_info[3]);
+
+            
             
             phtc_l.appendChild(pht_l);
             phtc_s.appendChild(pht_s);
@@ -309,8 +311,8 @@ function make_cart(){
         pay_b_s.setAttribute('style','float:right;background: rgba(126, 72, 174,1); text-align:center; padding:10px;color:rgba(0,0,0,1);font-weight: bold;font-size: 20px;font-family: \'Arvo\', serif;text-decoration:none');
         pay_b_l.innerHTML="Confirmar Compra";
         pay_b_s.innerHTML="Confirmar Compra";
-        pay_b_l.setAttribute('href',"Compra.html");
-        pay_b_s.setAttribute('href',"Compra.html");
+        pay_b_l.setAttribute('href',"/bigotes/Compra/");
+        pay_b_s.setAttribute('href',"/bigotes/Compra/");
         pay_b_s.onmouseover = function(){pay_b_s.style.background="rgba(126, 72, 174,.5)"};
         pay_b_l.onmouseover = function(){pay_b_l.style.background="rgba(126, 72, 174,.5)"};
         pay_b_s.onmouseout = function(){pay_b_s.style.background="rgba(126, 72, 174,1)"};
@@ -357,8 +359,8 @@ function make_cart(){
         div_p_s_C.setAttribute('style','background: rgba(126, 72, 174,1); text-align:center; padding:10px;color:rgba(0,0,0,1);font-weight: bold;font-size: 20px;font-family: \'Arvo\', serif;text-decoration:none');
         div_p_l_C.innerHTML="Nuestros Productos";
         div_p_s_C.innerHTML="Nuestros Productos";
-        div_p_l_C.setAttribute('href',"Productos.html");
-        div_p_s_C.setAttribute('href',"Productos.html");
+        div_p_l_C.setAttribute('href',"/bigotes/Productos/");
+        div_p_s_C.setAttribute('href',"/bigotes/Productos/");
         div_p_s_C.onmouseover = function(){div_p_s_C.style.background="rgba(126, 72, 174,.5)"};
         div_p_l_C.onmouseover = function(){div_p_l_C.style.background="rgba(126, 72, 174,.5)"};
         div_p_s_C.onmouseout = function(){div_p_s_C.style.background="rgba(126, 72, 174,1)"};

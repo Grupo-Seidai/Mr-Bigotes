@@ -4,13 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8"/>
     
-    <title>Mr Bigotes | Carta de Producto</title>
+    <title>Mr Bigotes | Carrito</title>
     
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href='/css/Mr_bigotes.css'>
-    <link rel="stylesheet" type="text/css" href='/bigotes/css/Productos/Productos.css'>
+    <link rel="stylesheet" type="text/css" href='/bigotes/css/Carrito/Carrito.css'>
     <link rel="stylesheet" type="text/css" href='/css/icons.css'>
-    <link rel="stylesheet" type="text/css" href='/bigotes/Productos/ref/css/Prd_Pg.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--STYLE/google.fonts-->
@@ -52,7 +51,7 @@
       </center>
       
         <div class='cart'>
-          <a  href='../../Carrito/'>
+          <a  href='/bigotes/Carrito/'>
             <i class="material-icons md-36 md-dark">add_shopping_cart</i>
           </a>
         </div>
@@ -65,7 +64,7 @@
           <span>
             <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
           </span>
-          <script src='../../../js/arriba.js'></script>
+          <script src='/js/arriba.js'></script>
         </div>
     </nav>
 
@@ -83,70 +82,43 @@
     </div>
 
 
-     
     <div class="decoration"></div>
     <div class="borrar"></div>
-    
+
     <article>
+      <h1 class="Ptitle Article">Tu Carrito</h1>
 
-      <div class="hide-medium hide-small display-container">
+       <div id="L_size" class="hide-medium hide-small display-container">
 
-        <div class="img-slideshow">
-          <div class="principal-img"><img class='principal-img-fl' src="/bigotes/Productos/images/M08-18-P.JPG"/></div>
-          <div class="img-mini">
-            <div class="mini-img"><img class='mini-img-fl chngP' src="/bigotes/Productos/images/M08-18-P.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngA' src="/bigotes/Productos/images/M08-18-A.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngB' src="/bigotes/Productos/images/M08-18-B.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngC' src="/bigotes/Productos/images/M08-18-C.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngD' src="/bigotes/Productos/images/M08-18-D.JPG"/></div>
-          </div>
-        </div>
-        
-        <div class="description">
-          <div id="Pname" class="Product-Name">Manilla Gatos Negros</div>
-          <div id="Pprice" class="p-price">$24500.00</div>
-          
-          <div class="p-desc">Manilla hecha con hilo y mostazilla de 12.5cm de largo por 2.2cm de ancho, con broches de metal y cadena con adorno al final de un ratón, diseño original de dos gatos negros, perfecta para los amantes de los felinos.</div>
-          <div class="p-desc"><b>Producto único.</b></div>
-          
-          <form id="add-to-cart-U">
-            <input class="subm" type="button" onclick="Submit()" value="Añadir al Carrito"></input>
-          </form>
-        </div>
+         <div id="cc_L" class="ccontent">
 
-      </div>
+           
+         </div>
 
-       <div class="hide-large">
+         <div id="cpay_L" class="cpay">
 
-        <div class="img-slideshow-s">
-          <div class="principal-img-s"><img class='principal-img-fl' src="/bigotes/Productos/images/M08-18-P.JPG"/></div>
-          <div class="img-mini-s">
-            <div class="mini-img"><img class='mini-img-fl chngP' src="/bigotes/Productos/images/M08-18-P.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngA' src="/bigotes/Productos/images/M08-18-A.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngB' src="/bigotes/Productos/images/M08-18-B.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngC' src="/bigotes/Productos/images/M08-18-C.JPG"/></div>
-            <div class="mini-img"><img class='mini-img-fl chngD' src="/bigotes/Productos/images/M08-18-D.JPG"/></div>
-          </div>
-        </div>
-        
-        <div class="description-s">
-          <div id="Pname" class="Product-Name">Manilla Gatos Negros</div>
-          <div id="Pprice" class="p-price">$24500.00</div>
-          
-          <div class="p-desc">Manilla hecha con hilo y mostazilla de 12.5cm de largo por 2.2cm de ancho, con broches de metal y cadena con adorno al final de un ratón, diseño original de dos gatos negros, perfecta para los amantes de los felinos.</div>
-          <div class="p-desc"><b>Producto único.</b></div>
-          
-          <form id="add-to-cart-U">
-            <input class="subm" type="button" onclick="Submit()" value="Añadir al Carrito"></input>
-          </form>
-          <script src="js/add_cart.js"></script>
-        </div>
+         </div>         
+         
+       </div>
 
+       <div id="S_size" class="hide-large display-container">
+
+         <div id="cc_S" class="ccontent">
+           
+         </div>
+
+         <div id="cpay_S" class="cpay">
+           
+         </div>
+         
       </div>
       
+       <script src="/bigotes/Productos/ref/js/add_cart.js"></script>
+       
+       <script src="/bigotes/js/Carrito/Carrito.js"></script>
+       
     </article>
-    <script src="js/sldshw.js"></script>
-
+    
     <footer class='foot'>
       <div class='network'>
         <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="fa fa-facebook"></a>
@@ -156,7 +128,7 @@
         <p class='seidai'>Grupo Seidai</p>
       </div>
     </footer>
-    
-    <script src="../../../js/bar.js"></script>
+
+    <script src="/js/bar.js"></script>
   </body>
 </html>

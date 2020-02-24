@@ -375,6 +375,12 @@ function make_cart(){
         ccontent_s.appendChild(div_p_s_A);
         ccontent_l.appendChild(div_p_l_B);
         ccontent_s.appendChild(div_p_s_B);
+
+        
+        var cpay_l=document.getElementById("cpay_L");
+        var cpay_s=document.getElementById("cpay_S");
+        cpay_l.innerHTML="";
+        cpay_s.innerHTML="";
     }
 }
 

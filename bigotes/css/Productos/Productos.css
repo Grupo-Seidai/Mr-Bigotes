@@ -23,7 +23,8 @@ div.p-float-in {
     background:rgba(146,140,255,.3);
 }
 div.p-img {
-    width: 100%;display: flex;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -31,6 +32,11 @@ img.p-img {
     width: 100%;
     height: auto;
 }
+
+img.p-img-perso {
+    height: 100%;
+}
+
 div.p-name {
     color:rgba(0,0,0,1);
     font-weight: bold;
@@ -69,4 +75,72 @@ div.p-price {
 @media only screen and (max-width: 600px) {
     div.p-float { width: 100%; }
     
+}
+
+
+.frm_entry_l{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0px;
+   font-family: 'Playfair Display', serif;
+}
+
+.frm_entry_l_f{
+    width:50%;
+    float:left;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0px;
+   font-family: 'Playfair Display', serif;
+}
+
+
+.frm_input{
+    width:90%;
+    margin:2%;
+    padding:3%;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+    border:0px;
+   background:rgba(193, 53, 132 ,.5);
+   font-family: 'Zilla Slab', serif;
+}
+
+.Pago_l{
+    margin:5%;
+    border: 1px solid rgba(193, 53, 132 ,1);
+    background: rgba(146,140,255,.7);
+}
+
+
+.m_p_select_l{
+    width:25%;
+    margin:2%;
+    padding:0px;
+    box-sizing:border-box;
+    font-weight:bold;
+    font-size:15px;
+    border:0px;
+    font-family: 'Zilla Slab', serif;
+    background-color:rgba(193, 53, 132 ,.5);
+    display:inline-block;
+}
+
+.m_p_select_l select { 
+    border: none; 
+    width:100%;
+    padding:3%;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* Remove default arrow */
+   background: url("../../images/arrow_drop_down-24px.svg")  right center no-repeat;
+   cursor: pointer;
 }

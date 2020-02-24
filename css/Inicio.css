@@ -65,6 +65,11 @@
     background-color:rgba(146,140,255,1);
 }
 
+
+.Us_L::after{
+    display:block;
+}
+
 .Camara_image_L{
     margin-right:5%;
     height:100%;
@@ -84,6 +89,122 @@
     background-color:rgba(126, 72, 174,1);
     left:50%;;
     transform:translate(80%,0%);
-    -ms-transform:translate(-80%,0%);
+    -ms-transform:translate(80%,0%);
 }
 
+.destacados{
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.dest_title{
+    padding:1%;
+    color:black;
+    text-align:center;
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+}
+
+#p-float {
+    max-width: 100%;
+    margin: 0 auto;
+    /* Clearfix */
+    overflow: auto;
+}
+#p-float::after {
+    /* Clearfix */
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Product items */
+div.p-float {
+    float: left;
+    width: 25%;
+}
+div.p-float-in {
+    box-sizing: border-box;
+    margin: 5px; 
+    padding: 10px;
+    border: 2px solid rgba(193, 53, 132 ,1);
+    background:rgba(146,140,255,.3);
+}
+div.p-img {
+    width: 100%;display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img.p-img {
+    width: 100%;
+    height: auto;
+}
+div.p-name {
+    color:rgba(0,0,0,1);
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Playfair Display', serif;
+}
+div.p-price {
+    color:rgba(193, 53, 132 ,1);
+    font-family: 'Zilla Slab', serif;
+}
+.p-add {
+    border: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background: rgba(126, 72, 174,1);
+    width: 70%;
+    margin:20px 15% 5px 15%;
+}
+.link-prd {
+    padding: 5px 0px 5px 0px;
+    color:rgba(255,255,255,1);
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Arvo', serif;
+}
+.p-add:hover {
+    background: rgba(126, 72, 174,.5);
+}
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    div.p-float { width: 50%; }
+ 
+}
+@media only screen and (max-width: 600px) {
+    div.p-float { width: 100%; }
+    
+}
+
+
+
+.Personalizado{
+    width:100%;
+    height:400px;
+    margin:0;
+    overflow:hidden;
+    background-color:rgba(193, 53, 132 ,.5);
+}
+
+.Persona_img{
+    float:right;
+    height:100%;
+    margin:0;
+}
+
+
+
+.Perso_bt_L{
+    position:absolute;
+    padding:.5%;
+    text-decoration:none;
+    color:black;
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(126, 72, 174,1);
+    right:50%;
+    transform:translate(-5%,0%);
+    -ms-transform:translate(-5%,0%);
+}

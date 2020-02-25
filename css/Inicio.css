@@ -188,6 +188,14 @@ div.p-price {
     background-color:rgba(193, 53, 132 ,.5);
 }
 
+
+.Personalizado_S{
+    width:100%;
+    height:auto;
+    margin:0;
+    background-color:rgba(193, 53, 132 ,.5);
+}
+
 .Persona_img{
     float:right;
     height:100%;
@@ -207,4 +215,118 @@ div.p-price {
     right:50%;
     transform:translate(-5%,0%);
     -ms-transform:translate(-5%,0%);
+}
+
+.Perso_bt_S{
+    position:absolute;
+    padding:.5%;
+    text-decoration:none;
+    color:black;
+    font-size: 30px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(126, 72, 174,1);
+    left:50%;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+}
+
+
+.Perso_prd_L{
+    position:absolute;
+    padding:.5%;
+    text-decoration:none;
+    color:black;
+    font-size: 40px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(126, 72, 174,1);
+    left:50%;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+}
+
+
+.Banner_a_S{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+
+.Banner_a_image_S{
+    width:100%;
+    margin:0;
+}
+
+.Text_info_a_S{
+    padding:1%;
+    color:black;
+    text-align:center;
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    position:absolute;
+    width: 35%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+    -ms-transform:translate(-50%,-150%);
+    background-color:rgba(255,228,207,1);
+}
+
+
+
+
+.Text_info_b_S{
+    margin:20px 15% ;
+    color:black;
+    text-align:center;
+    font-size: 25px;
+    font-family: 'Arvo', serif;
+    width:70%;
+    background-color:rgba(255,228,207,0);
+}
+
+
+.Us_S{
+    width:100%;
+    height:auto;
+    margin:0;
+    background-color:rgba(146,140,255,1);
+}
+
+.Text_info_c_S{
+    width:90%;
+    padding:5% 5%;
+    color:black;
+    text-align:center;
+    font-size: 30px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(255,228,207,0);
+}
+
+
+.Us_bt_S{
+    position:absolute;
+    padding:.5%;
+    text-decoration:none;
+    color:black;
+    font-size: 30px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(126, 72, 174,1);
+    left:50%;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+}
+
+
+
+.Perso_prd_S{
+    position:absolute;
+    padding:.5%;
+    text-decoration:none;
+    color:black;
+    font-size: 30px;
+    font-family: 'Arvo', serif;
+    background-color:rgba(126, 72, 174,1);
+    left:50%;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
 }

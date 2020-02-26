@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    
+    <title>Mr Bigotes | Carta de Producto</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href='/css/Mr_bigotes.css'>
+    <link rel="stylesheet" type="text/css" href='/bigotes/css/Productos/Productos.css'>
+    <link rel="stylesheet" type="text/css" href='/css/icons.css'>
+    <link rel="stylesheet" type="text/css" href='/bigotes/Productos/ref/css/Prd_Pg.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--STYLE/google.fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Playfair+Display|Zilla+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--JQuery-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+  </head>
+  <body>
+    
+    
+    <header class='head'>
+        <a  class='display-middle head' href='/'>
+          <img src='/images/Bigotes.svg' height="100px" width="100px"/>
+        </a>
+    </header>
+    
+    
+    
+     
+     <nav class='menu-all menu-nav'>
+      <center>
+        
+	<ul class='display-middle menu-all menu-ul hide-small hide-medium'>
+	  <li class='menu display-container menubar'><a href='/bigotes/Nosotros/' class='display-middle'>NOSOTROS</a></li>
+	  <li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='/bigotes/Productos/' class='display-middle'>PRODUCTOS</a>
+	    <div id="prod">
+	      <p class='menubar'><a href="/bigotes/Productos/Manillas/">Manillas</a></p>
+	      <p class='menubar'><a href="/bigotes/Productos/Collares/">Collares</a></p>
+	      <p class='menubar'><a href="/bigotes/Productos/Aretes/">Aretes</a></p>
+	      <p class='menubar'><a href="/bigotes/Productos/Otros/">Otros</a></p>
+	    </div>
+	  </li>
+	  <li class='menu display-container menubar'><a href='/bigotes/Contactanos/' class='display-middle'>CONTÁCTANOS</a></li>
+	</ul>
+      
+      </center>
+      
+        <div class='cart'>
+          <a  href='../../Carrito/'>
+            <i class="material-icons md-36 md-dark">add_shopping_cart</i>
+          </a>
+        </div>
+
+        <div id='b_menu' class='disp_menu hide-large'>
+            <i id='b_menu' class="material-icons md-36 md-dark">menu</i>
+        </div>
+        
+        <div id="returnH">
+          <span>
+            <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
+          </span>
+          <script src='../../../js/arriba.js'></script>
+        </div>
+    </nav>
+
+    <div id="menu_oculto" class="menu_oculto">
+      <ul class='menu-all menu-ul hide-large'>
+	<li class='menu display-container menubar'><a href='/bigotes/Nosotros/' class='display-middle menu-d'>NOSOTROS</a></li>
+	<li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='/bigotes/Productos/' class='display-middle menu-d'>PRODUCTOS</a>
+	</li>
+	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Manillas/" class='display-middle menu-d'>Manillas</a></p>
+	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Collares/" class='display-middle menu-d'>Collares</a></p>
+	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Aretes/" class='display-middle menu-d'>Aretes</a></p>
+	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Otros/" class='display-middle menu-d'>Otros</a></p>
+	<li class='menu display-container menubar'><a href='/bigotes/Contactanos/' class='display-middle menu-d'>CONTÁCTANOS</a></li>
+      </ul>
+    </div>
+
+     
+    <div class="decoration"></div>
+    <div class="borrar"></div>
+    
+    <article>
+
+      <div class="hide-medium hide-small display-container">
+
+        <div class="img-slideshow">
+          <div class="principal-img"><img class='principal-img-fl' src="/bigotes/Productos/images/A08-3-P.JPG"/></div>
+          <div class="img-mini">
+            <div class="mini-img"><img class='mini-img-fl chngP' src="/bigotes/Productos/images/A08-3-P.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngA' src="/bigotes/Productos/images/A08-3-A.JPG"/></div>
+          </div>
+        </div>
+        
+        <div class="description">
+          <div id="Pname" class="Product-Name">Aretes Copo de Nieve</div>
+          <div id="Pprice" class="p-price">$4000.00</div>
+          
+          <div class="p-desc">Adorables aretes de copos de nieve color dorado.</div>
+          <div class="p-desc"><b>Producto único.</b></div>
+          
+          <form id="add-to-cart-U">
+            <input class="subm" type="button" onclick="Submit()" value="Añadir al Carrito"></input>
+          </form>
+        </div>
+
+      </div>
+
+       <div class="hide-large">
+
+        <div class="img-slideshow-s">
+          <div class="principal-img-s"><img class='principal-img-fl' src="/bigotes/Productos/images/A08-3-P.JPG"/></div>
+          <div class="img-mini-s">
+            <div class="mini-img"><img class='mini-img-fl chngP' src="/bigotes/Productos/images/A08-3-P.JPG"/></div>
+            <div class="mini-img"><img class='mini-img-fl chngA' src="/bigotes/Productos/images/A08-3-A.JPG"/></div>
+          </div>
+        </div>
+        
+        <div class="description-s">
+          <div id="Pname" class="Product-Name">Aretes Copo de Nieve</div>
+          <div id="Pprice" class="p-price">$4000.00</div>
+          
+          <div class="p-desc">Adorables aretes de copos de nieve color dorado.</div>
+          <div class="p-desc"><b>Producto único.</b></div>
+          
+          <form id="add-to-cart-U">
+            <input class="subm" type="button" onclick="Submit()" value="Añadir al Carrito"></input>
+          </form>
+          <script src="js/add_cart.js"></script>
+        </div>
+
+      </div>
+      
+    </article>
+    <script src="js/sldshw.js"></script>
+
+    <footer class='foot'>
+      <div class='network'>
+        <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/mr._.bigotes/?hl=es-la" class="fa fa-instagram"></a>
+      </div>
+      <div class="copyright">
+        <p class='seidai'>Grupo Seidai</p>
+      </div>
+    </footer>
+    
+    <script src="../../../js/bar.js"></script>
+  </body>
+</html>

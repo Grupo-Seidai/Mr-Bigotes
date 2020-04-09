@@ -3,9 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8"/>
-    
+
     <title>Mr Bigotes | Carrito</title>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="/css/palette.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
@@ -19,33 +19,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital@0;1&family=Zilla+Slab&display=swap">
   </head>
   <body class="bg-light-yellow" onload="updateCart()">
-    
-    
 
-    
+
+
+
     <!-- Barra de Navegacion -->
     <header id="topbar">
       <a class="logo" href="/">
-        <img class="hide-small" src="/images/logo.svg"/>
-        <img class="hide-large hide-medium" src="/images/logoS.svg"/>
+        <img class="hide-small" src="/assets/logo.svg"/>
+        <img class="hide-large hide-medium" src="/assets/logoS.svg"/>
       </a>
       <nav class="top">
         <div class="display-middle hide-medium hide-small">
-	  <a href="/bigotes/Nosotros/" class="item">Nosotros</a>
+          <a href="/bigotes/Nosotros/" class="item">Nosotros</a>
           <div class="dropdown">
             <a href="/bigotes/Productos/" class="item dropdown-button">Productos</A>
-	    <div class="dropdown-content">
-	      <a href="/bigotes/Productos/Manillas/">Manillas</a>
-	      <a href="/bigotes/Productos/Collares/">Collares</a>
-	      <a href="/bigotes/Productos/Aretes/">Aretes</a>
-	    </div>
+            <div class="dropdown-content">
+              <a href="/bigotes/Productos/Manillas/">Manillas</a>
+              <a href="/bigotes/Productos/Collares/">Collares</a>
+              <a href="/bigotes/Productos/Aretes/">Aretes</a>
+            </div>
           </div>
           <a href="/bigotes/Contactanos/" class="item">Contáctanos</a>
         </div>
         <div class="display-right icon" style="right: 48px;">
           <a href="/bigotes/Carrito/"
              class="material-icons md-36 md-light">
-            add_shopping_cart
+            shopping_cart
           </a>
         </div>
         <div class="display-right hide-large">
@@ -60,19 +60,19 @@
         <a href="/bigotes/Nosotros/" class="item">Nosotros</a>
         <div>
           <a href="javascript:void(0)" onclick="dropdown(event)" class="item">Productos</A>
-	  <div class="dropdown-sidebar bg-blue">
-	    <a href="/bigotes/Productos/Manillas/">Manillas</a>
-	    <a href="/bigotes/Productos/Collares/">Collares</a>
-	    <a href="/bigotes/Productos/Aretes/">Aretes</a>
+          <div class="dropdown-sidebar bg-blue">
+            <a href="/bigotes/Productos/Manillas/">Manillas</a>
+            <a href="/bigotes/Productos/Collares/">Collares</a>
+            <a href="/bigotes/Productos/Aretes/">Aretes</a>
             <a href="/bigotes/Productos/">Todos</a>
-	  </div>
+          </div>
         </div>
         <a href="/bigotes/Contactanos/" class="item">Contáctanos</a>
       </nav>
     </header>
 
 
- 
+
 
     <div class="section">
       <div class="container center">
@@ -163,19 +163,25 @@
 
 
     <!-- Pie de pagina -->
-    <footer class="bg-violet">
-      <div>
+    <footer class="bg-violet display-container">
+      <div class="copyright">
+        Copyright 2020 &copy;
+      </div>
+
+      <div class="center display-middle">
         <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="social fa fa-36 fa-light fa-facebook" style="background: #3B5998;"></a>
         <a href="https://www.instagram.com/mr._.bigotes/" class="social fa fa-36 fa-light fa-instagram" style="background: #833AB4;"></a>
       </div>
-      <div class="seidai large">
-        Grupo Seidai
+
+      <div class="seidai">
+        <img src="/assets/Seidai_wh.svg"/>
+        <span class="hide-small">Grupo Seidai</span>
       </div>
     </footer>
 
 
-    
-    
+
+
     <script src="js/slideshow.js"></script>
     <script src="js/cart.js"></script>
     <script src="/js/bar.js"></script>

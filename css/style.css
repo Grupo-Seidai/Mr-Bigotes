@@ -115,8 +115,26 @@ footer .social {
     margin: 0px 10px;
 }
 
+footer .copyright {
+    color: #FFFFFF;
+    float: left;
+    padding: 0px 10px;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
 .seidai {
     font-family: "Zilla Slab", serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    float: right;
+    vertical-align: middle;
+    padding: 0px 10px;
+    line-height: 80px;
+}
+
+.seidai img {
+    vertical-align: middle;
 }
 
 

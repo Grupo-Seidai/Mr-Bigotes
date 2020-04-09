@@ -105,7 +105,8 @@ function addProduct(elements) {
     var cancel = document.createElement("a");
     cell = document.createElement("td");
     cancel.classList.add("material-icons");
-    cancel.innerHTML = "cancel";
+    cancel.classList.add("md-24");
+    cancel.innerHTML = "remove_shopping_cart";
     cell.appendChild(cancel);
     cell.addEventListener("click", function (event) {
         var element = event.target;

@@ -1,20 +1,20 @@
 html,body {
+    width: 100%;
     margin: 0px;
     padding: 0px;
     background-color:rgba(255,228,207,1);
 }
 
-.head{
+header {
     margin: 0px;
     padding:0px;
-    width:100px;
     height:100px;
     z-index:10;
     position: absolute;
     top:0px;
     left:0px;
-    background-color:rgba(202,159,176,1);
 }
+
 
 @media (min-width:1025px) {
     .hide-large {
@@ -170,34 +170,6 @@ article{
 
 .cart:hover {
     background-color:rgba(126, 72, 174,.5);
-}
-
-.foot{
-    position:relative;
-    background-color:rgba(202,159,176,1);
-    height:100px;
-    z-index:8;
-}
-
-.network{
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-}
-
-.copyright{
-    top:60%;
-    transform:translate(0%,-50%);
-    -ms-transform:translate(0%,-50%);
-    position:relative;
-}
-
-.seidai{
-    text-align:center;
-    color:black;
-    font-family: 'Zilla Slab', serif;
 }
 
 #returnH {

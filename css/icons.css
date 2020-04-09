@@ -1,27 +1,28 @@
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
 
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
 
-  /* Support for IE. */
-  font-feature-settings: 'liga';
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 
 /* Rules for sizing the icon. */
@@ -39,24 +40,29 @@
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 .fa {
-    padding: 10px;
-    font-size: 15px;
-    width: 25px;
-    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
     text-decoration: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
 }
 
-.fa:hover {
-    opacity: 0.7;
-}
+.fa.fa-18 { font-size: 18px; }
+.fa.fa-24 { font-size: 24px; }
+.fa.fa-36 { font-size: 36px; }
+.fa.fa-48 { font-size: 48px; }
 
+/* Rules for using icons as black on a light background. */
+.fa.fa-dark { color: rgba( 0,0,0,1); }
+.fa.fa-dark.fa-inactive { color: rgba(0,0,0,.5); }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-instagram {
-    background:#C13584;
-    color: white;
-}
+/* Rules for using icons as white on a dark background. */
+.fa.fa-light { color: rgba(255, 255, 255, 1); }
+.fa.fa-light.fa-inactive { color: rgba(255, 255, 255, 0.3); }

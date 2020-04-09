@@ -1,0 +1,47 @@
+.table-div {
+    width: 100%;
+}
+
+.table-div > div {
+    margin: 10px; 
+    padding: 10px;
+    border: 2px solid #FF0000;
+    background: #AB87FF;
+    border-top-left-radius: 10pt;
+    border-bottom-right-radius: 10pt;
+}
+
+.table-div img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.table-div .price::before {
+    content: "$ ";
+}
+.table-div .price::after {
+    content: ".oo";
+}
+
+.table-div a {
+    color: #FFFFFF;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.button {
+    color: #FFFFFF;
+    background: #5E4A8C;
+    max-width: 110px;
+    margin-top: 16px;
+}
+
+#cart-table {
+    width: 100%;
+}
+
+#cart-total {
+    margin-right: 0px;
+    margin-left: auto;
+}

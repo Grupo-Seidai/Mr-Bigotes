@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,442 +6,506 @@
     
     <title>Mr Bigotes | Productos</title>
     
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href='/css/Mr_bigotes.css'>
-    <link rel="stylesheet" type="text/css" href='/bigotes/css/Productos/Productos.css'>
-    <link rel="stylesheet" type="text/css" href='/css/icons.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/palette.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/responsive.css"/>
+    <link rel="stylesheet" href="/css/icons.css"/>
+    <link rel="stylesheet" href="css/product.css"/>
 
-    <!--STYLE/google.fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Playfair+Display|Zilla+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <!--JQuery-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital@0;1&family=Zilla+Slab&display=swap">
   </head>
-  <body>
-    
-    
-    <header class='head'>
-        <a  class='display-middle head' href='/'>
-          <img src='/images/Bigotes.svg' height="100px" width="100px"/>
-        </a>
-    </header>
-    
-    
-    
-     
-     <nav class='menu-all menu-nav'>
-      <center>
-        
-	<ul class='display-middle menu-all menu-ul hide-small hide-medium'>
-	  <li class='menu display-container menubar'><a href='/bigotes/Nosotros/' class='display-middle'>NOSOTROS</a></li>
-	  <li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='/bigotes/Productos/' class='display-middle'>PRODUCTOS</a>
-	    <div id="prod">
-	      <p class='menubar'><a href="/bigotes/Productos/Manillas/">Manillas</a></p>
-	      <p class='menubar'><a href="/bigotes/Productos/Collares/">Collares</a></p>
-	      <p class='menubar'><a href="/bigotes/Productos/Aretes/">Aretes</a></p>
-	      <p class='menubar'><a href="/bigotes/Productos/Otros/">Otros</a></p>
+  <body class="bg-light-yellow">
+
+
+    <!-- Barra de Navegacion -->
+    <header id="topbar">
+      <a class="logo" href="/">
+        <img class="hide-small" src="/images/logo.svg"/>
+        <img class="hide-large hide-medium" src="/images/logoS.svg"/>
+      </a>
+      <nav class="top">
+        <div class="display-middle hide-medium hide-small">
+	  <a href="/bigotes/Nosotros/" class="item">Nosotros</a>
+          <div class="dropdown">
+            <a href="/bigotes/Productos/" class="item dropdown-button">Productos</A>
+	    <div class="dropdown-content">
+	      <a href="/bigotes/Productos/Manillas/">Manillas</a>
+	      <a href="/bigotes/Productos/Collares/">Collares</a>
+	      <a href="/bigotes/Productos/Aretes/">Aretes</a>
 	    </div>
-	  </li>
-	  <li class='menu display-container menubar'><a href='/bigotes/Contactanos/' class='display-middle'>CONTÁCTANOS</a></li>
-	</ul>
-      
-      </center>
-      
-        <div class='cart'>
-          <a  href='/bigotes/Carrito/'>
-            <i class="material-icons md-36 md-dark">add_shopping_cart</i>
+          </div>
+          <a href="/bigotes/Contactanos/" class="item">Contáctanos</a>
+        </div>
+        <div class="display-right icon" style="right: 48px;">
+          <a href="/bigotes/carrito"
+             class="material-icons md-36 md-light">
+            add_shopping_cart
           </a>
         </div>
+        <div class="display-right hide-large">
+          <a id="menu"
+             class="icon material-icons md-36 md-light"
+             href="javascript:void(0)" onclick="openSidebar()">
+            menu
+          </a>
+        </div>
+      </nav>
+      <nav id="sidebar" class="sidebar hide-large">
+        <a href="/bigotes/Nosotros/" class="item">Nosotros</a>
+        <div>
+          <a href="javascript:void(0)" onclick="dropdown(event)" class="item">Productos</A>
+	  <div class="dropdown-sidebar bg-blue">
+	    <a href="/bigotes/Productos/Manillas/">Manillas</a>
+	    <a href="/bigotes/Productos/Collares/">Collares</a>
+	    <a href="/bigotes/Productos/Aretes/">Aretes</a>
+            <a href="/bigotes/Productos/">Todos</a>
+	  </div>
+        </div>
+        <a href="/bigotes/Contactanos/" class="item">Contáctanos</a>
+      </nav>
+    </header>
 
-        <div id='b_menu' class='disp_menu hide-large'>
-            <i id='b_menu' class="material-icons md-36 md-dark">menu</i>
+    
+
+    
+    <div class="section">
+      <div class="container center">
+        <b class="jumbo hide-medium hide-small">
+          Nuestros Productos
+        </b>
+        <b class="xxlarge hide-large">
+          Nuestros Productos
+        </b>
+      </div>
+
+      <div class="container">
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M01-14-P.JPG"/>
+            <div class="name">Manilla Triángulos</div>
+            <div class="price">18 500</div>
+            <a href="/bigotes/Productos/ref/M01_14.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M12-15-P.JPG"/>
+            <div class="name">Manilla Colores</div>
+            <div class="price">20 000</div>
+            <a href="/bigotes/Productos/ref/M12_15.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A07-3-P.JPG"/>
+            <div class="name">Aretes Torre Eiffel</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A07_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M02-18-P.JPG"/>
+            <div class="name">Manilla El Principito</div>
+            <div class="price">24 500</div>
+            <a href="/bigotes/Productos/ref/M02_18.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C00-35-P.JPG"/>
+            <div class="name">Collar en Cascada</div>
+            <div class="price">45 500</div>
+            <a href="/bigotes/Productos/ref/C00_35.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A0F-3-P.JPG"/>
+            <div class="name">Aretes Jaula</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A0F_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M03-17-P.JPG"/>
+            <div class="name">Manilla Pulso y Flor</div>
+            <div class="price">23 000</div>
+            <a href="/bigotes/Productos/ref/M03_17.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A05-3-P.JPG"/>
+            <div class="name">Aretes Llaves Calaveras</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A05_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M05-16-P.JPG"/>
+            <div class="name">Manilla Rombos</div>
+            <div class="price">21 500</div>
+            <a href="/bigotes/Productos/ref/M05_16.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C01-15-P.JPG"/>
+            <div class="name">Choker Lentejuelas</div>
+            <div class="price">19 500</div>
+            <a href="/bigotes/Productos/ref/C01_15.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A06-5-P.JPG"/>
+            <div class="name">Aretes Helados</div>
+            <div class="price">6 500</div>
+            <a href="/bigotes/Productos/ref/A06_5.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M06-18-P.JPG"/>
+            <div class="name">Manilla Precolombina</div>
+            <div class="price">24 500</div>
+            <a href="/bigotes/Productos/ref/M06_18.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A10-3-P.JPG"/>
+            <div class="name">Aretes Mariposa</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A10_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C02-20-P.JPG"/>
+            <div class="name">Choker Cadenas</div>
+            <div class="price">26 000</div>
+            <a href="/bigotes/Productos/ref/C02_20.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M00-14-P.JPG"/>
+            <div class="name">Manilla Rombos y Curces</div>
+            <div class="price">18 500</div>
+            <a href="/bigotes/Productos/ref/M00_14.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A0B-3-P.JPG"/>
+            <div class="name">Aretes Dados</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A0B_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M07-15-P.JPG"/>
+            <div class="name">Manilla Corazón Azul</div>
+            <div class="price">20 000</div>
+            <a href="/bigotes/Productos/ref/M07_15.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C07-15-P.JPG"/>
+            <div class="name">Choker Pluma y Colgantes</div>
+            <div class="price">19 500</div>
+            <a href="/bigotes/Productos/ref/C07_15.html" class="button">Ver Producto</a>
+          </div>
         </div>
         
-        <div id="returnH">
-          <span>
-            <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
-          </span>
-          <script src='/js/arriba.js'></script>
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M08-18-P.JPG"/>
+            <div class="name">Manilla Gatos Negros</div>
+            <div class="price">24 500</div>
+            <a href="/bigotes/Productos/ref/M08_18.html" class="button">Ver Producto</a>
+          </div>
         </div>
-    </nav>
-
-    <div id="menu_oculto" class="menu_oculto">
-      <ul class='menu-all menu-ul hide-large'>
-	<li class='menu display-container menubar'><a href='/bigotes/Nosotros/' class='display-middle menu-d'>NOSOTROS</a></li>
-	<li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='/bigotes/Productos/' class='display-middle menu-d'>PRODUCTOS</a>
-	</li>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Manillas/" class='display-middle menu-d'>Manillas</a></p>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Collares/" class='display-middle menu-d'>Collares</a></p>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Aretes/" class='display-middle menu-d'>Aretes</a></p>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Otros/" class='display-middle menu-d'>Otros</a></p>
-	<li class='menu display-container menubar'><a href='/bigotes/Contactanos/' class='display-middle menu-d'>CONTÁCTANOS</a></li>
-      </ul>
-    </div>
-
-     
-    <div class="decoration"></div>
-    <div class="borrar"></div>
-    
-    <article>
-      <h1 class="Ptitle Article">Nuestros Productos</h1>
-
-      <div id="p-float">
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M01-14-P.JPG"/></div>
-          <div class="p-name">Manilla Triángulos</div>
-          <div class="p-price">$18.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M01_14.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M12-15-P.JPG"/></div>
-          <div class="p-name">Manilla Colores</div>
-          <div class="p-price">$20.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M12_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A07-3-P.JPG"/></div>
-          <div class="p-name">Aretes Torre Eiffel</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A07_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M02-18-P.JPG"/></div>
-          <div class="p-name">Manilla El Principito</div>
-          <div class="p-price">$24.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M02_18.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C00-35-P.JPG"/></div>
-          <div class="p-name">Collar en Cascada</div>
-          <div class="p-price">$45.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C00_35.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A0F-3-P.JPG"/></div>
-          <div class="p-name">Aretes Jaula</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A0F_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M03-17-P.JPG"/></div>
-          <div class="p-name">Manilla Pulso y Flor</div>
-          <div class="p-price">$23.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M03_17.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A05-3-P.JPG"/></div>
-          <div class="p-name">Aretes Llaves Calaveras</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A05_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M05-16-P.JPG"/></div>
-          <div class="p-name">Manilla Rombos</div>
-          <div class="p-price">$21.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M05_16.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C01-15-P.JPG"/></div>
-          <div class="p-name">Choker Lentejuelas</div>
-          <div class="p-price">$19.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C01_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A06-5-P.JPG"/></div>
-          <div class="p-name">Aretes Helados</div>
-          <div class="p-price">$6.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A06_5.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M06-18-P.JPG"/></div>
-          <div class="p-name">Manilla Precolombina</div>
-          <div class="p-price">$24.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M06_18.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A10-3-P.JPG"/></div>
-          <div class="p-name">Aretes Mariposa</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A10_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C02-20-P.JPG"/></div>
-          <div class="p-name">Choker Cadenas</div>
-          <div class="p-price">$26.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C02_20.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-      
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M00-14-P.JPG"/></div>
-          <div class="p-name">Manilla Rombos y Curces</div>
-          <div class="p-price">$18.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M00_14.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A0B-3-P.JPG"/></div>
-          <div class="p-name">Aretes Dados</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A0B_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M07-15-P.JPG"/></div>
-          <div class="p-name">Manilla Corazón Azul</div>
-          <div class="p-price">$20.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M07_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C07-15-P.JPG"/></div>
-          <div class="p-name">Choker Pluma y Colgantes</div>
-          <div class="p-price">$19.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C07_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M08-18-P.JPG"/></div>
-          <div class="p-name">Manilla Gatos Negros</div>
-          <div class="p-price">$24.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M08_18.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M11-18-P.JPG"/></div>
-          <div class="p-name">Manilla Rayas Diagonales</div>
-          <div class="p-price">$24.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M11_18.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A0C-3-P.JPG"/></div>
-          <div class="p-name">Aretes Alas</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A0C_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M14-14-P.JPG"/></div>
-          <div class="p-name">Manilla Noche Estrellada</div>
-          <div class="p-price">$18.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M14_14.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C08-15-P.JPG"/></div>
-          <div class="p-name">Choker Colgantes Rojos</div>
-          <div class="p-price">$19.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C08_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A0E-3-P.JPG"/></div>
-          <div class="p-name">Aretes Osito</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A0E_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M04-16-P.JPG"/></div>
-          <div class="p-name">Manilla Nutria</div>
-          <div class="p-price">$21.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M04_16.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C03-35-P.JPG"/></div>
-          <div class="p-name">Collar en Cascada</div>
-          <div class="p-price">$45.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C03_35.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A02-3-P.JPG"/></div>
-          <div class="p-name">Aretes Uvas</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A02_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M09-14-P.JPG"/></div>
-          <div class="p-name">Manilla Rombos Rosados</div>
-          <div class="p-price">$18.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M09_14.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C05-15-P.JPG"/></div>
-          <div class="p-name">Choker Negro</div>
-          <div class="p-price">$19.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C05_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A03-3-P.JPG"/></div>
-          <div class="p-name">Aretes Fresas</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A03_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M10-16-P.JPG"/></div>
-          <div class="p-name">Manilla Sandías y Piñas</div>
-          <div class="p-price">$21.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M10_16.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A09-3-P.JPG"/></div>
-          <div class="p-name">Aretes Corona</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A09_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A04-3-P.JPG"/></div>
-          <div class="p-name">Aretes Yin Yang</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A04_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C04-15-P.JPG"/></div>
-          <div class="p-name">Choker Blanco y Negro</div>
-          <div class="p-price">$19.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C04_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A0A-3-P.JPG"/></div>
-          <div class="p-name">Aretes Antifaz</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A0A_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/C06-15-P.JPG"/></div>
-          <div class="p-name">Choker Llave</div>
-          <div class="p-price">$19.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/C06_15.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A01-3-P.JPG"/></div>
-          <div class="p-name">Aretes Cerezas</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A01_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M13-14-P.JPG"/></div>
-          <div class="p-name">Manilla Flores Rojas</div>
-          <div class="p-price">$18.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M13_14.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A0D-3-P.JPG"/></div>
-          <div class="p-name">Aretes Maletin</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A0D_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/M15-14-P.JPG"/></div>
-          <div class="p-name">Manilla Bandera</div>
-          <div class="p-price">$18.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/M15_14.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A00-5-P.JPG"/></div>
-          <div class="p-name">Aretes Corazones Azules</div>
-          <div class="p-price">$6.500,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A00_5.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img" src="/bigotes/Productos/images/A08-3-P.JPG"/></div>
-          <div class="p-name">Aretes Copo de Nieve</div>
-          <div class="p-price">$4.000,oo</div>
-          <div  class="p-add"><a href="/bigotes/Productos/ref/A08_3.html" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-      <!--                  Productos personalizados!                               -->
-
-      <div class="p-float"><div class="p-float-in">
-          <div class="p-img"><img class="p-img-perso" src="/images/INICIO_SLIDE_SHOW_02.jpg"/></div>
-          <div class="p-name">Producto Personalizado</div>
-          <div class="p-price">$-</div>
-          <div  class="p-add"><a href="/bigotes/Productos/Personalizado/" class="link-prd" >Ver Producto</a></div>
-      </div></div>
-
-      
-    </div>
-    </article>
-    <script src="/bigotes/Productos/js/Prod_Cell.js"></script>
-
-    <footer class='foot'>
-      <div class='network'>
-        <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/mr._.bigotes/?hl=es-la" class="fa fa-instagram"></a>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M11-18-P.JPG"/>
+            <div class="name">Manilla Rayas Diagonales</div>
+            <div class="price">24 500</div>
+            <a href="/bigotes/Productos/ref/M11_18.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A0C-3-P.JPG"/>
+            <div class="name">Aretes Alas</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A0C_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M14-14-P.JPG"/>
+            <div class="name">Manilla Noche Estrellada</div>
+            <div class="price">18 500</div>
+            <a href="/bigotes/Productos/ref/M14_14.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C08-15-P.JPG"/>
+            <div class="name">Choker Colgantes Rojos</div>
+            <div class="price">19 500</div>
+            <a href="/bigotes/Productos/ref/C08_15.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A0E-3-P.JPG"/>
+            <div class="name">Aretes Osito</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A0E_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M04-16-P.JPG"/>
+            <div class="name">Manilla Nutria</div>
+            <div class="price">21 500</div>
+            <a href="/bigotes/Productos/ref/M04_16.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C03-35-P.JPG"/>
+            <div class="name">Collar en Cascada</div>
+            <div class="price">45 500</div>
+            <a href="/bigotes/Productos/ref/C03_35.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A02-3-P.JPG"/>
+            <div class="name">Aretes Uvas</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A02_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M09-14-P.JPG"/>
+            <div class="name">Manilla Rombos Rosados</div>
+            <div class="price">18 500</div>
+            <a href="/bigotes/Productos/ref/M09_14.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C05-15-P.JPG"/>
+            <div class="name">Choker Negro</div>
+            <div class="price">19 500</div>
+            <a href="/bigotes/Productos/ref/C05_15.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A03-3-P.JPG"/>
+            <div class="name">Aretes Fresas</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A03_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M10-16-P.JPG"/>
+            <div class="name">Manilla Sandías y Piñas</div>
+            <div class="price">21 500</div>
+            <a href="/bigotes/Productos/ref/M10_16.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A09-3-P.JPG"/>
+            <div class="name">Aretes Corona</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A09_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A04-3-P.JPG"/>
+            <div class="name">Aretes Yin Yang</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A04_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C04-15-P.JPG"/>
+            <div class="name">Choker Blanco y Negro</div>
+            <div class="price">19 500</div>
+            <a href="/bigotes/Productos/ref/C04_15.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A0A-3-P.JPG"/>
+            <div class="name">Aretes Antifaz</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A0A_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+        
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/C06-15-P.JPG"/>
+            <div class="name">Choker Llave</div>
+            <div class="price">19 500</div>
+            <a href="/bigotes/Productos/ref/C06_15.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A01-3-P.JPG"/>
+            <div class="name">Aretes Cerezas</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A01_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M13-14-P.JPG"/>
+            <div class="name">Manilla Flores Rojas</div>
+            <div class="price">18 500</div>
+            <a href="/bigotes/Productos/ref/M13_14.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A0D-3-P.JPG"/>
+            <div class="name">Aretes Maletin</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A0D_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/M15-14-P.JPG"/>
+            <div class="name">Manilla Bandera</div>
+            <div class="price">18 500</div>
+            <a href="/bigotes/Productos/ref/M15_14.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A00-5-P.JPG"/>
+            <div class="name">Aretes Corazones Azules</div>
+            <div class="price">6 500</div>
+            <a href="/bigotes/Productos/ref/A00_5.html" class="button">Ver Producto</a>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <div>
+            <img src="/bigotes/Productos/images/A08-3-P.JPG"/>
+            <div class="name">Aretes Copo de Nieve</div>
+            <div class="price">4 000</div>
+            <a href="/bigotes/Productos/ref/A08_3.html" class="button">Ver Producto</a>
+          </div>
+        </div>
       </div>
-      <div class="copyright">
-        <p class='seidai'>Grupo Seidai</p>
+    </div>
+      
+
+
+
+    <!-- Productos personalizados! -->
+    <div class="section center">
+      <div class="banner-container" style="height: 400px;">
+        <img style="float: left;" class="banner-col margin-right" src="/images/INICIO_SLIDE_SHOW_02.jpg"/>
+        
+        <div class="banner-col bg-violet">
+          <div class="container">
+            <div class="padding-large margin">
+              <div class="padding xxlarge">
+                También hacemos manillas, collares, aretes y demás accesorios bajo pedido.
+              </div>
+            </div>
+            <div class="padding-large margin">
+              <a href="/bigotes/Productos/Personalizado/"
+                 style="white-space: normal;"
+                 class="margin button bg-dark-violet white xxlarge">
+                ¡Escríbenos y ordena el tuyo!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Pie de pagina -->
+    <footer class="bg-violet">
+      <div>
+        <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="social fa fa-36 fa-light fa-facebook" style="background: #3B5998;"></a>
+        <a href="https://www.instagram.com/mr._.bigotes/" class="social fa fa-36 fa-light fa-instagram" style="background: #833AB4;"></a>
+      </div>
+      <div class="seidai large">
+        Grupo Seidai
       </div>
     </footer>
+
+
+    
     
     <script src="/js/bar.js"></script>
   </body>

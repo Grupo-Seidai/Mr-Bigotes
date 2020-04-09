@@ -1,0 +1,44 @@
+.white {
+    color: #FFFFFF;
+}
+
+.black {
+    color: #000000;
+}
+
+.bg-green {
+    background: #A9E5BB;
+}
+
+.bg-light-yellow {
+    background: #FAFFE5;
+}
+
+.bg-yellow {
+    background: #F5FFC6;
+}
+
+.bg-red {
+    background: #FF0000;
+}
+
+.bg-blue {
+    background: #B4E1FF;
+}
+
+.bg-violet {
+    background: #AB87FF;
+}
+
+.bg-dark-violet {
+    background: #5E4A8C;
+}
+
+.glassy-black {
+    color: #ffffff !important;
+    background: rgba(0,0,0,0.6) !important;
+}
+
+.glassy {
+    opacity: 0.6;
+}

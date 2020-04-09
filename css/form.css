@@ -1,0 +1,49 @@
+form {
+    margin: auto;
+    max-width: 500px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000000;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0px;
+    font-family: 'Zilla Slab', serif;
+    transition: .3s;
+    border-bottom: 2px solid #bebed2;
+}
+
+
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="tel"]:hover,
+form input[type="date"]:hover,
+form select:hover,
+form textarea:hover {
+    border-bottom: 2px solid #78788c;
+}
+
+
+form input[type="submit"] {
+    padding: 8px 12px;
+    margin: 18px 0 0;
+    font-family: 'Arvo', serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}

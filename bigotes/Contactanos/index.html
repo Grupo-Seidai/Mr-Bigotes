@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,154 +6,130 @@
     
     <title>Mr Bigotes | Contáctanos</title>
     
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href='/css/Mr_bigotes.css'>
-    <link rel="stylesheet" type="text/css" href='/bigotes/css/Contactanos/Contactanos.css'>
-    <link rel="stylesheet" type="text/css" href='/css/icons.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/palette.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/responsive.css"/>
+    <link rel="stylesheet" href="/css/icons.css"/>
+    <link rel="stylesheet" href="/css/form.css"/>
 
-    <!--STYLE/google.fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Playfair+Display|Zilla+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <!--JQuery-->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital@0;1&family=Zilla+Slab&display=swap">
   </head>
-  <body>
-    
-    
-    <header class='head'>
-        <a  class='display-middle head' href='/'>
-          <img src='/images/Bigotes.svg' height="100px" width="100px"/>
-        </a>
+  <body class="bg-light-yellow">
+
+
+    <!-- Barra de Navegacion -->
+    <header id="topbar">
+      <a class="logo" href="/">
+        <img class="hide-small" src="/images/logo.svg"/>
+        <img class="hide-large hide-medium" src="/images/logoS.svg"/>
+      </a>
+      <nav class="top">
+        <div class="display-middle hide-medium hide-small">
+	  <a href="/bigotes/Nosotros/" class="item">Nosotros</a>
+          <div class="dropdown">
+            <a href="/bigotes/Productos/" class="item dropdown-button">Productos</A>
+	    <div class="dropdown-content">
+	      <a href="/bigotes/Productos/Manillas/">Manillas</a>
+	      <a href="/bigotes/Productos/Collares/">Collares</a>
+	      <a href="/bigotes/Productos/Aretes/">Aretes</a>
+	    </div>
+          </div>
+          <a href="/bigotes/Contactanos/" class="item">Contáctanos</a>
+        </div>
+        <div class="display-right icon" style="right: 48px;">
+          <a href="/bigotes/carrito"
+             class="material-icons md-36 md-light">
+            add_shopping_cart
+          </a>
+        </div>
+        <div class="display-right hide-large">
+          <a id="menu"
+             class="icon material-icons md-36 md-light"
+             href="javascript:void(0)" onclick="openSidebar()">
+            menu
+          </a>
+        </div>
+      </nav>
+      <nav id="sidebar" class="sidebar hide-large">
+        <a href="/bigotes/Nosotros/" class="item">Nosotros</a>
+        <div>
+          <a href="javascript:void(0)" onclick="dropdown(event)" class="item">Productos</A>
+	  <div class="dropdown-sidebar bg-blue">
+	    <a href="/bigotes/Productos/Manillas/">Manillas</a>
+	    <a href="/bigotes/Productos/Collares/">Collares</a>
+	    <a href="/bigotes/Productos/Aretes/">Aretes</a>
+            <a href="/bigotes/Productos/">Todos</a>
+	  </div>
+        </div>
+        <a href="/bigotes/Contactanos/" class="item">Contáctanos</a>
+      </nav>
     </header>
     
     
     
-     
-     <nav class='menu-all menu-nav'>
-      <center>
-        
-	<ul class='display-middle menu-all menu-ul hide-small hide-medium'>
-	  <li class='menu display-container menubar'><a href='/bigotes/Nosotros/' class='display-middle'>NOSOTROS</a></li>
-	  <li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='/bigotes/Productos/' class='display-middle'>PRODUCTOS</a>
-	    <div id="prod">
-	      <p class='menubar'><a href="/bigotes/Productos/Manillas/">Manillas</a></p>
-	      <p class='menubar'><a href="/bigotes/Productos/Collares/">Collares</a></p>
-	      <p class='menubar'><a href="/bigotes/Productos/Aretes/">Aretes</a></p>
-	      <p class='menubar'><a href="/bigotes/Productos/Otros/">Otros</a></p>
-	    </div>
-	  </li>
-	  <li class='menu display-container menubar'><a href='/bigotes/Contactanos/' class='display-middle'>CONTÁCTANOS</a></li>
-	</ul>
-      
-      </center>
-      
-        <div class='cart'>
-          <a  href='/bigotes/Carrito/'>
-            <i class="material-icons md-36 md-dark">add_shopping_cart</i>
-          </a>
-        </div>
-
-        <div id='b_menu' class='disp_menu hide-large'>
-            <i id='b_menu' class="material-icons md-36 md-dark">menu</i>
-        </div>
-        
-        <div id="returnH">
-          <span>
-            <i class="material-icons md-36 md-dark" >keyboard_arrow_up</i>
-          </span>
-          <script src='/js/arriba.js'></script>
-        </div>
-    </nav>
-
-    <div id="menu_oculto" class="menu_oculto">
-      <ul class='menu-all menu-ul hide-large'>
-	<li class='menu display-container menubar'><a href='/bigotes/Nosotros/' class='display-middle menu-d'>NOSOTROS</a></li>
-	<li class='menu display-container menubar' onmouseover="ver()" onmouseout="ocultar()"><a  href='/bigotes/Productos/' class='display-middle menu-d'>PRODUCTOS</a>
-	</li>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Manillas/" class='display-middle menu-d'>Manillas</a></p>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Collares/" class='display-middle menu-d'>Collares</a></p>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Aretes/" class='display-middle menu-d'>Aretes</a></p>
-	<p class='menu display-container menubar-d'><a href="/bigotes/Productos/Otros/" class='display-middle menu-d'>Otros</a></p>
-	<li class='menu display-container menubar'><a href='/bigotes/Contactanos/' class='display-middle menu-d'>CONTÁCTANOS</a></li>
-      </ul>
-    </div>
-
-
-     
-    <div class="decoration"></div>
-    <div class="borrar"></div>
     
-    <article>
-      <div class='Contenedor hide-small hide-medium'>
-      <form id='CU' class='formu' method="post" name="ContactUs" action="https://formspree.io/mjvyzeaq" >
-
-	<h1 class='Contact'>Contáctanos</h1>
-
-	<p type="Name:"><input type='text' class='C_in' placeholder="Tu nombre." name='Nombre' required></input></p>
-	<p type="Email:"><input type='email' class='C_in' placeholder="Correo para poder contactarte." name='Email' required></input></p>
-	<p type="Message:"><textarea class='C_in' placeholder="El mensaje que nos quieres dar." name='Mensaje' required></textarea></p>
-	<input class="subm" type="submit" value="Enviar"></input>
-
-      </form>
-
-     
+    <div class="section">
+      <div class="container center">
+        <b class="jumbo hide-medium hide-small">
+          Contáctanos
+        </b>
+        <b class="xxlarge hide-large">
+          Contáctanos
+        </b>
+      </div>
+      <div class="container">
+        <div class="col-half">
+          <div class="container">
+            <form id="CU" method="post" name="ContactUs" action="https://formspree.io/mjvyzeaq" >
+	      <p>
+                <input type="text" placeholder="Tu nombre" name="Nombre" required/>
+              </p>
+	      <p>
+                <input type="email" placeholder="Correo para poder contactarte" name="Email" required/>
+              </p>
+	      <p>
+                <textarea placeholder="El mensaje que nos quieres dar" name="Mensaje" required></textarea>
+              </p>
+	      <input type="submit" value="Enviar"/>
+            </form>
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="col-half">
+          <div class="container margin">
+            Al enviar el comentario te dirigirá a una página para una verificación CAPTCHA
+          </div>
+          <div class="container margin">
+	    Tambien nos puedes contactar por: <br/>
+	    <b>Cel.:</b> 313 322 2103 <br/>
+	    <b>E-mail.:</b> artesaniasmrbigotes@gmail.com <br/>
+	    <b>Dir.:</b> Calle 80D Bis # 94J-45, Bogotá, Colombia
+          </div>
+        </div>
+      </div>
+    </div>
       
-      <div class='Cont'>
-	
-	<ul >
-	  <li class='Contl_A'>Al enviar el comentario te dirigirá a una página para una verificación CAPTCHA.</li>
-	  <li class='Contl_A'>Tambien nos puedes contactar por:</li>
-	  <li class='Contl'><b>Cel.:</b> 313 322 2103</li>
-	  <li class='Contl'><b>E-mail.:</b> artesaniasmrbigotes@gmail.com</li>
-	  <li class='Contl'><b>Dir.:</b> Calle 80D Bis # 94J-45, Bogotá, Colombia</li>
-	  
-	</ul>
-	
-      </div>
-      </div>
-
-      <div class='Contenedor-c  hide-large'>
-      <form id='CU' class='formu-c' method="post" name="ContactUs" action="https://formspree.io/mjvyzeaq" >
-
-	<h1 class='Contact'>Contáctanos</h1>
-
-	<p type="Name:"><input type='text' class='C_in' placeholder="Tu nombre." name='Nombre' required></input></p>
-	<p type="Email:"><input type='email' class='C_in' placeholder="Correo para poder contactarte." name='Email' required></input></p>
-	<p type="Message:"><textarea class='C_in' placeholder="El mensaje que nos quieres dar." name='Mensaje' required></textarea></p>
-	<input class="subm" type="submit" value="Enviar"></input>
-
-      </form>
-
-     
       
-      <div class='Cont-c'>
-	
-	<ul >
-	  <li class='Contl_A'>Al enviar el comentario te dirigirá a una página para una verificación CAPTCHA.</li>
-	  <li class='Contl_A'>Tambien nos puedes contactar por:</li>
-	  <li class='Contl'>Cel.: 3133222103</li>
-	  <li class='Contl'>E-mail.: artesaniasmrbigotes@gmail.com</li>
-	  <li class='Contl'>Dir.: Calle 80D Bis # 94J-45, Bogotá, Colombia</li>
-	  
-	</ul>
-	
+      <!-- Pie de pagina -->
+    <footer class="bg-violet">
+      <div>
+        <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="social fa fa-36 fa-light fa-facebook" style="background: #3B5998;"></a>
+        <a href="https://www.instagram.com/mr._.bigotes/" class="social fa fa-36 fa-light fa-instagram" style="background: #833AB4;"></a>
       </div>
-      </div>
-    </article>
-
-    <footer class='foot'>
-      <div class='network'>
-        <a href="https://www.facebook.com/Mr-Bigotes-156815198325011/" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/mr._.bigotes/?hl=es-la" class="fa fa-instagram"></a>
-      </div>
-      <div class="copyright">
-        <p class='seidai'>Grupo Seidai</p>
+      <div class="seidai large">
+        Grupo Seidai
       </div>
     </footer>
     
-    <script src="../js/bar.js"></script>
+    
+    
+    <script src="/js/bar.js"></script>
   </body>
 </html>
